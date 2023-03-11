@@ -3,8 +3,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "../Styles/Navbar.css";
 
 const Navbar = () => {
-  let firstPartNavBarContent = ["#Home", "#Projects"];
-  let secondPartNavBarContent = ["#About Me", "#Contact"];
+  let firstPartNavBarContent = ["Home", "Projects"];
+  let secondPartNavBarContent = ["About Me", "Contact"];
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
@@ -16,6 +16,7 @@ const Navbar = () => {
         {firstPartNavBarContent.map((c, i) => {
           return (
             <a key={i} href="#/">
+              <span className="Hashtag">#</span>
               {c}
             </a>
           );
@@ -32,6 +33,7 @@ const Navbar = () => {
         {secondPartNavBarContent.map((c, i) => {
           return (
             <a key={i} href="#/">
+              <span className="Hashtag">#</span>
               {c}
             </a>
           );
