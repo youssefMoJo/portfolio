@@ -1,10 +1,9 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 50px;
     padding: 0 2rem;
-    background-color: black;
   }
 
   nav a {
@@ -22,17 +21,30 @@ header {
   .nav-btn {
     padding: 5px;
     cursor: pointer;
-    /* border: none; */
-    /* outline: none; */
-    /* background: transparent; */
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
     visibility: hidden;
     opacity: 0;
   }
+ 
   
 @media only screen and (max-width: 1024px) {
     .nav-btn {
       visibility: visible;
       opacity: 1;
+    }
+
+    .nav-open-btn {
+      margin-right: -100%;
+    }
+
+    .nav-close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
     }
 
     nav {
@@ -59,9 +71,5 @@ header {
       font-size: larger;
     }
 
-    .nav-close-btn {
-      position: absolute;
-      top: 1rem;
-      right: 2rem;
-    }
+   
 }
