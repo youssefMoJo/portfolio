@@ -3,7 +3,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "../Styles/Navbar.css";
 
 const Navbar = () => {
-  let navBarContent = ["#Home", "#Projects", "#About Me", "#Contact"];
+  let firstPartNavBarContent = ["#Home", "#Projects"];
+  let secondPartNavBarContent = ["#About Me", "#Contact"];
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
@@ -12,11 +13,30 @@ const Navbar = () => {
   return (
     <header>
       <nav ref={navRef}>
-        {navBarContent.map((c, i) => (
-          <a key={i} href="#/">
-            {c}
-          </a>
-        ))}
+        {firstPartNavBarContent.map((c, i) => {
+          return (
+            <a key={i} href="#/">
+              {c}
+            </a>
+          );
+        })}
+
+        <a href="#/">
+          <img
+            className="Logo"
+            src={require("../Assets/logo.png")}
+            alt="Logo"
+          />
+        </a>
+
+        {secondPartNavBarContent.map((c, i) => {
+          return (
+            <a key={i} href="#/">
+              {c}
+            </a>
+          );
+        })}
+
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

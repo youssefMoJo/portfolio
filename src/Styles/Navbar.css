@@ -2,8 +2,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 60px;
     padding: 0 2rem;
+    background-color: black;
   }
 
   nav a {
@@ -16,6 +17,11 @@ header {
 
   nav a:hover {
     color: #00d0ff;
+  }
+  
+  .Logo {
+    width: 40px;
+    margin-bottom: -10px;
   }
   
   .nav-btn {
