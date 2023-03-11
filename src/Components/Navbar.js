@@ -12,6 +12,14 @@ const Navbar = () => {
 
   return (
     <header>
+      <a className="responsiveLogo" href="#/">
+        <img
+          className="responsiveLogo"
+          src={require("../Assets/logo.png")}
+          alt="Logo"
+        />
+      </a>
+
       <nav ref={navRef}>
         {firstPartNavBarContent.map((c, i) => {
           return (
@@ -22,7 +30,7 @@ const Navbar = () => {
           );
         })}
 
-        <a href="#/">
+        <a className="Logo" href="#/">
           <img
             className="Logo"
             src={require("../Assets/logo.png")}
@@ -43,6 +51,7 @@ const Navbar = () => {
           <FaTimes />
         </button>
       </nav>
+
       <button className="nav-btn nav-open-btn" onClick={showNavbar}>
         <FaBars />
       </button>

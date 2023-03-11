@@ -6,11 +6,10 @@ header {
     justify-content: center;
     height: 60px;
     padding: 0 2rem;
-    background-color: black;
   }
 
   nav a {
-    margin: 0 20px;
+    margin: 0 40px;
     text-decoration: none;
     color: white;
     font-size: xx-large;
@@ -30,8 +29,8 @@ header {
   }
   
   .Logo {
-    width: 40px;
-    margin-bottom: -10px;
+    width: 45px;
+    margin-bottom: -12px;
   }
 
   .nav-btn {
@@ -45,9 +44,24 @@ header {
     visibility: hidden;
     opacity: 0;
   }
+
+
+  .responsiveLogo {
+    position: absolute;
+    width: 40px;
+    left: 0.5rem;
+    top: 0.25rem;
+    visibility: hidden;
+    opacity: 0;
+  }
  
   
 @media only screen and (max-width: 1024px) {
+  .responsiveLogo {
+    visibility: visible;
+    opacity: 1;
+  }
+
     .nav-btn {
       visibility: visible;
       opacity: 1;
@@ -61,6 +75,11 @@ header {
       position: absolute;
       top: 1rem;
       right: 1rem;
+    }
+
+    .Logo {
+      visibility: hidden;
+      height: 0;
     }
 
     nav {
@@ -86,6 +105,4 @@ header {
     nav a {
       font-size: xx-large;
     }
-
-   
 }
