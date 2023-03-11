@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@500&display=swap');
+
+
+.HomeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: rgb(15, 15, 14);
+}
+
+.SideDecorationCircleShape {
+    height: 30px;
+    width: 30px;
+    background-color: #00d0ff;
+    border-radius: 50%;
+}
+
+.SideDecorationLineShape {
+    height: 25rem;
+    width: 2px;
+    margin-left: 14px;
+    background-image: linear-gradient(#00d0ff, #101424);
+}
+
+.LeftSideContainer {
+    display: flex;
+}
+
+.Hello {
+    font-family: 'Iceland', cursive;
+    font-family: 'Kaisei Decol', serif;
+    font-size: 150px;
+    background-image: linear-gradient(#cec4c4, #474545);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+
+.MyNameSentence {
+    font-family: 'Iceland', cursive;
+    font-size: 50px;
+    margin: 0;
+}
+
+.MyName {
+    color: #00d0ff;
+    font-family: 'Iceland', cursive;
+}
+
+.Title {
+    font-family: 'Iceland', cursive;
+    font-size: 35px;
+}
+
+.ResumeButton {
+    display: flex;
+    border: #cec4c4;
+    border-radius: 100px;
+    width: fit-content;
+    padding: 8px 15px;
+    font-weight: bold;
+    background-color: #0046FB;
+    cursor: pointer;
+    font-size:medium;
+
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #0c3785, #4481eb, #0891be, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.ResumeButton:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.ResumeButton:focus {
+    outline: none;
+}
+
+.DownloadIcon {
+    margin-left: 10px;
+    font-size: x-large;
+}
