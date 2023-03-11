@@ -1,59 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    padding: 0 2rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0 2rem;
+ 
+}
 
-  nav a {
-    margin: 0 40px;
-    text-decoration: none;
-    color: white;
-    font-size: xx-large;
-    font-family: 'Iceland', cursive;
-  }
 
-  .Hashtag {
-    background-image: linear-gradient(#00cffd, #ee0d0d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
+.NavbarItems {
+  margin: 0 50px;
+  text-decoration: none;
+  color: white;
+  font-size: xx-large;
+  font-family: 'Iceland', cursive;
+  display: inline-block;
+  position: relative;
+  color: #0eafff;
+}
 
-  nav a:hover {
-    font-weight: bold;
-    color: #00d0ff;
-  }
+.NavbarItems::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00d0ff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.NavbarItems:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.NavbarItems:hover {
+  font-weight: bold;
+  color: #00d0ff;
+}
+
+.Hashtag {
+  background-image: linear-gradient(#00cffd, #ee0d0d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
   
-  .Logo {
-    width: 45px;
-    margin-bottom: -12px;
-  }
+.Logo {
+  width: 45px;
+  margin-bottom: -12px;
+}
 
-  .nav-btn {
-    padding: 5px;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: transparent;
-    color: white;
-    border: none;
-    outline: none;
-    visibility: hidden;
-    opacity: 0;
+.Logo:hover{
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-direction: normal;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
 
 
-  .responsiveLogo {
-    position: absolute;
-    width: 40px;
-    left: 0.5rem;
-    top: 0.25rem;
-    visibility: hidden;
-    opacity: 0;
-  }
+.responsiveLogo {
+  position: absolute;
+  width: 40px;
+  left: 0.5rem;
+  top: 0.25rem;
+  visibility: hidden;
+  opacity: 0;
+}
  
   
 @media only screen and (max-width: 1024px) {
@@ -62,47 +100,47 @@ header {
     opacity: 1;
   }
 
-    .nav-btn {
-      visibility: visible;
-      opacity: 1;
-    }
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
 
-    .nav-open-btn {
-      margin-right: -100%;
-    }
+  .nav-open-btn {
+    margin-right: -100%;
+  }
 
-    .nav-close-btn {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
+  .nav-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
 
-    .Logo {
-      visibility: hidden;
-      height: 0;
-    }
+  .Logo {
+    visibility: hidden;
+    height: 0;
+  }
 
-    nav {
-      position: fixed;
-      top: -100vh;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      background-color: rgb(10, 9, 26);
-      transition: 1s;
-      font-size: larger;
-    }
+  nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: rgb(10, 9, 26);
+    transition: 1s;
+    font-size: larger;
+  }
 
-    .responsive_nav {
-		  transform: translateY(100vh);
-    }
+  .responsive_nav {
+    transform: translateY(100vh);
+  }
 
-    nav a {
-      font-size: xx-large;
-    }
+  nav a {
+    font-size: xx-large;
+  }
 }

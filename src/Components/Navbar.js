@@ -23,7 +23,7 @@ const Navbar = () => {
       <nav ref={navRef}>
         {firstPartNavBarContent.map((c, i) => {
           return (
-            <a key={i} href="#/">
+            <a className="NavbarItems" key={i} href="#/">
               <span className="Hashtag">#</span>
               {c}
             </a>
@@ -40,7 +40,7 @@ const Navbar = () => {
 
         {secondPartNavBarContent.map((c, i) => {
           return (
-            <a key={i} href="#/">
+            <a className="NavbarItems" key={i} href="#/">
               <span className="Hashtag">#</span>
               {c}
             </a>
