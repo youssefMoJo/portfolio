@@ -1,11 +1,8 @@
 import "../Styles/Home.css";
 import { BiDownload } from "react-icons/bi";
+import MyResume from "./resume.pdf";
 
 const Home = () => {
-  const placeholderText = [
-    { type: "heading1", text: "HELLO My name is youssef" },
-  ];
-
   return (
     <div className="HomeContainer">
       <div className="LeftSideContainer">
@@ -20,7 +17,8 @@ const Home = () => {
           </h2>
           <h2 className="Title">Full Stack Developer</h2>
           <div className="ResumeButton">
-            Download Resume
+            <a href={MyResume}>Download Resume</a>
+
             <BiDownload className="DownloadIcon" />
           </div>
         </div>
