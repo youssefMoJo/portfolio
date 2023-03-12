@@ -24,7 +24,20 @@ const Home = () => {
         </div>
       </div>
 
-      <div>Circle shape compnent</div>
+      <div className="RightSideContainer">
+        <div className="TransparentCircleShape">
+          <img
+            className="HiChar"
+            src={require("../Assets/HiChar.png")}
+            alt="Hi"
+          />
+          <img
+            className="HiWord"
+            src={require("../Assets/HiWord.png")}
+            alt="Hi"
+          />
+        </div>
+      </div>
     </div>
   );
 };
