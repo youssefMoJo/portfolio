@@ -10,6 +10,10 @@
     background-color: rgb(15, 15, 14);
 }
 
+.LeftSideContainer {
+    display: flex;
+}
+
 .SideDecorationCircleShape {
     height: 30px;
     width: 30px;
@@ -24,10 +28,6 @@
     background-image: linear-gradient(#00d0ff, #101424);
 }
 
-.LeftSideContainer {
-    display: flex;
-}
-
 .Hello {
     font-family: 'Iceland', cursive;
     font-family: 'Kaisei Decol', serif;
@@ -37,6 +37,13 @@
     -webkit-background-clip: text;
     color: transparent;
     margin: 0;
+    position: relative;
+    animation: hello ease 1.5s;
+}
+
+@keyframes hello  {
+    0%   {left:100px; top:0px;  opacity: 0;}
+    100% {left:0px; top:0px; opacity: 1;} 
 }
 
 .MyNameSentence {
@@ -70,7 +77,7 @@
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    background-image: linear-gradient(to right, #0c3785, #4481eb, #0891be, #3f86ed);
+    background-image: linear-gradient(to right, #0046FB, #4481eb, #0891be, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
@@ -88,4 +95,24 @@
 .DownloadIcon {
     margin-left: 10px;
     font-size: x-large;
+}
+
+@media only screen and (max-width: 1024px) {
+    .HomeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .Hello {
+        font-size: 90px;
+        margin-right: 5px;
+    }
+    .MyNameSentence {
+        font-size: 35px;
+    }
 }

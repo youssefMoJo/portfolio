@@ -2,6 +2,10 @@ import "../Styles/Home.css";
 import { BiDownload } from "react-icons/bi";
 
 const Home = () => {
+  const placeholderText = [
+    { type: "heading1", text: "HELLO My name is youssef" },
+  ];
+
   return (
     <div className="HomeContainer">
       <div className="LeftSideContainer">
