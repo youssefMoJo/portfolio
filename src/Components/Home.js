@@ -1,6 +1,6 @@
 import "../Styles/Home.css";
 import { BiDownload } from "react-icons/bi";
-import MyResume from "./resume.pdf";
+import MyResume from "../Files/resume.pdf";
 
 const Home = () => {
   return (
