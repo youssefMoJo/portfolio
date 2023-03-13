@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.ProjectsTitle {
+  font-family: 'Iceland', cursive;
+}
+
+.PHashtag {
+    background-image: linear-gradient(#00cffd, #ee0d0d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
