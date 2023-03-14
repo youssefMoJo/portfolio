@@ -1,6 +1,5 @@
 import "../Styles/ProjectCard.css";
 import { GoMarkGithub } from "react-icons/go";
-import { DiGithub } from "react-icons/di";
 
 const ProjectCard = () => {
   const tech = [
