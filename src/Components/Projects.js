@@ -1,5 +1,6 @@
 import "../Styles/Projects.css";
 import ProjectCard from "./ProjectCard";
+import projectsData from "./ProjectsData";
 
 const Projects = () => {
   return (
