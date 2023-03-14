@@ -1,14 +1,19 @@
 import "../Styles/ProjectCard.css";
 import { GoMarkGithub } from "react-icons/go";
+import { color } from "framer-motion";
 
 const ProjectCard = (props) => {
-  const tech = [
-    { name: "#React", color: "#00c8ff" },
-    { name: "#React Native", color: "#00c8ff" },
-    { name: "#MongoDB", color: "#14da56" },
-    { name: "#Node", color: "#dadd14" },
-    { name: "#Socket.IO", color: "#ffffff" },
-  ];
+  const technologiesColors = {
+    React: "#00c8ff",
+    "React Native": "#00c8ff",
+    MongoDB: "#14da56",
+    Node: "#dadd14",
+    "Python (pandas, NumPy, matplotlib, scikit-learn)": "#dadd14",
+    "Socket.IO": "#ffffff",
+    Firebase: "#ff9a00",
+    "AWS (DynamoDB, Cognito, API Gateway, Lambda)": "#ff9a00",
+  };
+
   return (
     <div className="card">
       <img
@@ -33,9 +38,20 @@ const ProjectCard = (props) => {
         </div>
       </div>
       <div className="description">{props.discription}</div>
+
       <div className="technologies">
-        #Python (pandas, NumPy, matplotlib, scikit-learn) #React Native
+        {props.techUsed.map((tech, i) => {
+          return (
+            <div
+              key={i}
+              style={{ color: technologiesColors[tech], marginRight: "10px" }}
+            >
+              #{tech}
+            </div>
+          );
+        })}
       </div>
+
       <div className="links">
         <a
           className="visitProjectButton"

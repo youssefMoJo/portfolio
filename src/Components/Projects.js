@@ -13,12 +13,14 @@ const Projects = () => {
         {projectsData.map((project, i) => {
           return (
             <ProjectCard
+              key={i}
               name={project.name}
               date={project.date}
               appType={project.appType}
               teamOrSoloProject={project.teamOrSoloProject}
               discription={project.discription}
               link={project.link}
+              techUsed={project.Technologies}
               github={project.github}
             />
           );
