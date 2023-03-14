@@ -37,11 +37,9 @@ const ProjectCard = (props) => {
         #Python (pandas, NumPy, matplotlib, scikit-learn) #React Native
       </div>
       <div className="links">
-        <div className="visitProjectButton">
-          <a target="_blank" href={props.link}>
-            VISIT THE WEBSITE
-          </a>
-        </div>
+        <a className="visitProjectButton" target="_blank" href={props.link}>
+          VISIT THE WEBSITE
+        </a>
         <GoMarkGithub className="gitHubButton" />
       </div>
     </div>
