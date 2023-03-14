@@ -20,8 +20,9 @@ const Home = () => {
             <a className="ResumeButton" href={MyResume}>
               Download Resume
             </a>
-
-            <BiDownload className="DownloadIcon" />
+            <a href={MyResume}>
+              <BiDownload className="DownloadIcon" />
+            </a>
           </div>
         </div>
       </div>

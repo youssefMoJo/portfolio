@@ -45,7 +45,9 @@ const ProjectCard = (props) => {
         >
           VISIT THE WEBSITE
         </a>
-        <GoMarkGithub className="gitHubButton" />
+        <a rel="noreferrer" target="_blank" href={props.github}>
+          <GoMarkGithub className="gitHubButton" />
+        </a>
       </div>
     </div>
   );

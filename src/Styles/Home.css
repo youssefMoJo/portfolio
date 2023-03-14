@@ -87,11 +87,6 @@
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
-/* .ResumeButton a {
-    color: inherit;
-    text-decoration: none;
-}  */
-
 .ResumeButton:hover {
     background-position: 100% 0;
     -o-transition: all .4s ease-in-out;
@@ -106,8 +101,9 @@
 .DownloadIcon {
     font-size: x-large;
     margin-left: -2.2rem;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
     cursor: pointer;
+    color: white;
 }
 
 .TransparentCircleShape {
