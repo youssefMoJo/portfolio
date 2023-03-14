@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@400;500;700&display=swap');
+
 .card {
-    height: 500px;
+    height: 600px;
     width: 400px;
     border-radius: 40px;
     border-style: solid;
     border-color: #ffffff;
-    box-shadow: 0px 0px 5px 0px #ffffff;
     border-width: 2px;
+    box-shadow: 0px 0px 10px 0px #ffffff;
     transition: box-shadow 0.5s;
-    padding: 15px;
+    padding: 12px;
     /* display: flex;
     flex-direction: column; */
 }
 
 .card:hover {
-    box-shadow: 0px 0px 1000px 0px #00d0ff;
+    box-shadow: 0px 0px 1000px 10px #00d0ff;
     border-color: #00d0ff;
 }
 
@@ -26,5 +29,113 @@
 
 .titleSection {
     display: flex;
-    background-color: #00d0ff;
+    height: fit-content;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.titleSectionLeftSide {
+    width: 50%;
+}
+
+.title {
+    font-family: 'Iceland', cursive;
+    font-family: 'Kaisei Decol', serif;
+    font-size: xx-large;
+}
+
+.titleSectionMiddleLine {
+    width: 2px;
+    height: 4.5rem;
+    background-color:#02b8e0;
+    margin-right: 0.5rem;
+}
+
+.date {
+    font-family: 'Iceland', cursive;
+    font-family: 'Kaisei Decol', serif;
+    font-size: 15px;
+    color: rgb(224, 219, 219);
+}
+
+.titleSectionRighttSide {
+    padding-top: 11px;
+}
+
+.appType   {
+    font-size: large;
+    font-family: 'Iceland', cursive;
+    font-family: 'Kaisei Decol', serif;
+    margin-bottom: 7px;
+    color: rgb(224, 219, 219);
+}
+
+.teamOrSoloProject {
+    font-size: large;
+    font-family: 'Iceland', cursive;
+    font-family: 'Kaisei Decol', serif;
+    color: rgb(224, 219, 219);
+}
+
+.description {
+    font-size: 1.2rem;
+    font-family: 'Iceland', cursive;
+    font-family: 'Kaisei Decol', serif;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.technologies {
+    font-size: larger;
+    color: #ffffff;
+    font-weight:bold;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.visitProjectButton {
+    border: #cec4c4;
+    border-radius: 100px;
+    width: 80%;
+    padding: 8px 15px;
+    font-weight: bold;
+    background-color: #0046FB;
+    cursor: pointer;
+    font-size: large;
+    margin-top: 20px;
+    text-align: center;
+
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #0046FB, #4481eb, #0891be, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.visitProjectButton a {
+    color: inherit;
+    text-decoration: none;
+} 
+
+.visitProjectButton:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.visitProjectButton:focus {
+    outline: none;
+}
+
+.gitHubButton {
+    font-size: 2.6rem;
+    margin-top: 20px;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #f4f4f5;
 }

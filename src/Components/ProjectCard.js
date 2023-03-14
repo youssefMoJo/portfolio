@@ -1,6 +1,15 @@
 import "../Styles/ProjectCard.css";
+import { GoMarkGithub } from "react-icons/go";
+import { DiGithub } from "react-icons/di";
 
 const ProjectCard = () => {
+  const tech = [
+    { name: "#React", color: "#00c8ff" },
+    { name: "#React Native", color: "#00c8ff" },
+    { name: "#MongoDB", color: "#14da56" },
+    { name: "#Node", color: "#dadd14" },
+    { name: "#Socket.IO", color: "#ffffff" },
+  ];
   return (
     <div className="card">
       <img
@@ -9,17 +18,28 @@ const ProjectCard = () => {
         alt="myflex"
       />
       <div className="titleSection">
-        <div>
-          <div>title</div>
-          <div>Date</div>
+        <div className="titleSectionLeftSide">
+          <div className="title">MyFlex</div>
+          <div className="date">June 2020 - July 2020</div>
         </div>
-        <div>
-          <div>type</div>
-          <div>team project</div>
+        <div className="titleSectionMiddleLine"></div>
+        <div className="titleSectionRighttSide">
+          <div className="appType">Web App</div>
+          <div className="teamOrSoloProject">Team project</div>
         </div>
       </div>
-      <div>Description</div>
-      <div>technologies</div>
+      <div className="description">
+        This web application intends to help you decide what movie to watch next
+        with a recommendation feature and movie tracking system to enhance your
+        viewing experience.
+      </div>
+      <div className="technologies">#Socket.IO</div>
+      <div className="links">
+        <div className="visitProjectButton">
+          <a href={"./"}>VISIT THE WEBSITE</a>
+        </div>
+        <GoMarkGithub className="gitHubButton" />
+      </div>
     </div>
   );
 };
