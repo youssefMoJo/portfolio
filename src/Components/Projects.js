@@ -1,11 +1,16 @@
 import "../Styles/Projects.css";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div>
-      <h1 className="ProjectsTitle">
-        <span className="PHashtag">#</span> Projects
-      </h1>
+    <div className="ProjectsContainer">
+      <div className="ProjectsTitle">
+        <span className="Hashtag">#</span> Projects
+      </div>
+
+      <div className="cardsContainer">
+        <ProjectCard />
+      </div>
     </div>
   );
 };
