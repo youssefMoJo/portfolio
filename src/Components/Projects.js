@@ -10,6 +10,10 @@ const Projects = () => {
 
       <div className="cardsContainer">
         <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
       </div>
     </div>
   );

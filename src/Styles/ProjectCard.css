@@ -8,16 +8,18 @@
     border-style: solid;
     border-color: #ffffff;
     border-width: 2px;
-    box-shadow: 0px 0px 10px 0px #ffffff;
+    /* box-shadow: 0px 0px 10px 0px #ffffff; */
     transition: box-shadow 0.5s;
     padding: 12px;
     /* display: flex;
     flex-direction: column; */
+
 }
 
 .card:hover {
-    box-shadow: 0px 0px 1000px 10px #00d0ff;
+    box-shadow: 0px 0px 1000px 10px #119fbe;
     border-color: #00d0ff;
+    background-color: #0a0606;
 }
 
 .projectImg {
@@ -112,7 +114,7 @@
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    background-image: linear-gradient(to right, #0046FB, #4481eb, #0891be, #3f86ed);
+    background-image: linear-gradient(to right, #0046FB, #1664eb, #0891be, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
@@ -131,6 +133,7 @@
 .visitProjectButton:focus {
     outline: none;
 }
+
 
 .gitHubButton {
     font-size: 2.6rem;

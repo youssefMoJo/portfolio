@@ -135,7 +135,7 @@ header {
   }
 
   .responsive_nav {
-    transform: translateY(100vh);
+    transform: translateY(98vh);
   }
 
   nav a {

@@ -3,7 +3,7 @@
 
 
 .ProjectsContainer {
-    margin-left: 10rem;
+    margin-left: 16rem;
     width: 100%;
 }
 
@@ -20,5 +20,12 @@
     color: transparent;
     font-family: 'Kaisei Decol', serif;
     font-weight: bold;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 3rem;
+  width: 80%;
+  flex-wrap: wrap;
 }
 
