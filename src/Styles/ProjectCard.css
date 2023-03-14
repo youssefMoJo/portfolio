@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@400;500;700&display=swap');
 
 .card {
-    height: 600px;
+    height: 650px;
     width: 400px;
     border-radius: 40px;
     border-style: solid;
@@ -33,6 +33,7 @@
     height: fit-content;
     margin-bottom: 15px;
     align-items: center;
+    height: 13%;
 }
 
 .titleSectionLeftSide {
@@ -42,7 +43,13 @@
 .title {
     font-family: 'Iceland', cursive;
     font-family: 'Kaisei Decol', serif;
-    font-size: xx-large;
+    font-size: 1.7rem;
+}
+
+.HeartDiseasePrediction {
+    font-family: 'Iceland', cursive;
+    font-family: 'Kaisei Decol', serif;
+    font-size: 1.1rem;
 }
 
 .titleSectionMiddleLine {
@@ -55,7 +62,7 @@
 .date {
     font-family: 'Iceland', cursive;
     font-family: 'Kaisei Decol', serif;
-    font-size: 15px;
+    font-size: 17px;
     color: rgb(224, 219, 219);
 }
 
@@ -83,18 +90,20 @@
     font-family: 'Iceland', cursive;
     font-family: 'Kaisei Decol', serif;
     text-align: justify;
-    margin-bottom: 1rem;
+    height: 25%;
 }
 
 .technologies {
     font-size: larger;
     color: #ffffff;
     font-weight:bold;
+    height: 10%;
 }
 
 .links {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .visitProjectButton {
@@ -106,7 +115,6 @@
     background-color: #0046FB;
     cursor: pointer;
     font-size: large;
-    margin-top: 20px;
     text-align: center;
 
     background-size: 300% 100%;
@@ -133,10 +141,8 @@
     outline: none;
 }
 
-
 .gitHubButton {
     font-size: 2.6rem;
-    margin-top: 20px;
     margin-left: 1rem;
     cursor: pointer;
     color: #f4f4f5;

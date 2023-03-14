@@ -1,8 +1,8 @@
 const projectsData = [
   {
-    name: "HeartDiseasePrediction",
+    name: "Heart Disease Prediction",
     date: "Oct. 2022 – Dec. 2022",
-    appType: "",
+    appType: "-",
     teamOrSoloProject: "Team Project",
     discription:
       "Applied Machine Learning methods and data preparation techniques to pre-process raw medical data and construct multiple predictive models.",

@@ -1,7 +1,7 @@
 import "../Styles/ProjectCard.css";
 import { GoMarkGithub } from "react-icons/go";
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
   const tech = [
     { name: "#React", color: "#00c8ff" },
     { name: "#React Native", color: "#00c8ff" },
@@ -18,24 +18,29 @@ const ProjectCard = () => {
       />
       <div className="titleSection">
         <div className="titleSectionLeftSide">
-          <div className="title">MyFlex</div>
-          <div className="date">June 2020 - July 2020</div>
+          {props.name == "Heart Disease Prediction" ? (
+            <div className="HeartDiseasePrediction">{props.name}</div>
+          ) : (
+            <div className="title">{props.name}</div>
+          )}
+
+          <div className="date">{props.date}</div>
         </div>
         <div className="titleSectionMiddleLine"></div>
         <div className="titleSectionRighttSide">
-          <div className="appType">Web App</div>
-          <div className="teamOrSoloProject">Team project</div>
+          <div className="appType">{props.appType}</div>
+          <div className="teamOrSoloProject">{props.teamOrSoloProject}</div>
         </div>
       </div>
-      <div className="description">
-        This web application intends to help you decide what movie to watch next
-        with a recommendation feature and movie tracking system to enhance your
-        viewing experience.
+      <div className="description">{props.discription}</div>
+      <div className="technologies">
+        #Python (pandas, NumPy, matplotlib, scikit-learn) #React Native
       </div>
-      <div className="technologies">#Socket.IO</div>
       <div className="links">
         <div className="visitProjectButton">
-          <a href={"./"}>VISIT THE WEBSITE</a>
+          <a target="_blank" href={props.link}>
+            VISIT THE WEBSITE
+          </a>
         </div>
         <GoMarkGithub className="gitHubButton" />
       </div>

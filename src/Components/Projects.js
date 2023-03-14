@@ -10,11 +10,19 @@ const Projects = () => {
       </div>
 
       <div className="cardsContainer">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projectsData.map((project, i) => {
+          return (
+            <ProjectCard
+              name={project.name}
+              date={project.date}
+              appType={project.appType}
+              teamOrSoloProject={project.teamOrSoloProject}
+              discription={project.discription}
+              link={project.link}
+              github={project.github}
+            />
+          );
+        })}
       </div>
     </div>
   );
