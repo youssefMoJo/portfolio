@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
       />
       <div className="titleSection">
         <div className="titleSectionLeftSide">
-          {props.name == "Heart Disease Prediction" ? (
+          {props.name === "Heart Disease Prediction" ? (
             <div className="HeartDiseasePrediction">{props.name}</div>
           ) : (
             <div className="title">{props.name}</div>
@@ -37,7 +37,12 @@ const ProjectCard = (props) => {
         #Python (pandas, NumPy, matplotlib, scikit-learn) #React Native
       </div>
       <div className="links">
-        <a className="visitProjectButton" target="_blank" href={props.link}>
+        <a
+          className="visitProjectButton"
+          rel="noreferrer"
+          target="_blank"
+          href={props.link}
+        >
           VISIT THE WEBSITE
         </a>
         <GoMarkGithub className="gitHubButton" />

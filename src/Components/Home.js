@@ -16,8 +16,10 @@ const Home = () => {
             I Am <span className="MyName">Youssef Mohamed</span>
           </h2>
           <h2 className="Title">Full Stack Developer</h2>
-          <div className="ResumeButton">
-            <a href={MyResume}>Download Resume</a>
+          <div className="ResumeButtonContainer">
+            <a className="ResumeButton" href={MyResume}>
+              Download Resume
+            </a>
 
             <BiDownload className="DownloadIcon" />
           </div>
