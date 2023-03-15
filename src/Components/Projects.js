@@ -23,6 +23,7 @@ const Projects = () => {
               techUsed={project.Technologies}
               github={project.github}
               specialStyling={project.specialStyling}
+              imageName={project.imageName}
             />
           );
         })}

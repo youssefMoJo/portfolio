@@ -15,7 +15,7 @@ const Navbar = () => {
       <a className="responsiveLogo" href="#/">
         <img
           className="responsiveLogo"
-          src={require("../Assets/logo.png")}
+          src={require("../Assets/Logo.png")}
           alt="Logo"
         />
       </a>
@@ -33,7 +33,7 @@ const Navbar = () => {
         <a className="Logo" href="#/">
           <img
             className="Logo"
-            src={require("../Assets/logo.png")}
+            src={require("../Assets/Logo.png")}
             alt="Logo"
           />
         </a>

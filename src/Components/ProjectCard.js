@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
     <div className="card">
       <img
         className="projectImg"
-        src={require("../Assets/myflex.png")}
+        src={require(`../Assets/${props.imageName}`)}
         alt="myflex"
       />
       <div className="titleSection">
