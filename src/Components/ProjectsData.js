@@ -9,6 +9,7 @@ const projectsData = [
     link: "https://www.kaggle.com/code/youssefmohamed21/heart-disease-prediction-using-ml",
     github: "https://github.com/ksfarag/Heart-Disease-Prediction-Using-ML",
     Technologies: ["Python (pandas, NumPy, matplotlib, scikit-learn)"],
+    specialStyling: false,
   },
   {
     name: "Quotes",
@@ -23,6 +24,7 @@ const projectsData = [
       "React Native",
       "AWS (DynamoDB, Cognito, API Gateway, Lambda)",
     ],
+    specialStyling: true,
   },
   {
     name: "FadfadA",
@@ -34,6 +36,7 @@ const projectsData = [
     link: "http://ec2-3-141-165-79.us-east-2.compute.amazonaws.com:3000/#/",
     github: "https://github.com/youssefMoJo/Fadfada",
     Technologies: ["React", "Node", "Socket IO"],
+    specialStyling: false,
   },
   {
     name: "MyFlex",
@@ -45,6 +48,7 @@ const projectsData = [
     link: "http://ec2-3-141-165-79.us-east-2.compute.amazonaws.com:3333/",
     github: "https://github.com/MyFelx/App",
     Technologies: ["React", "Node", "MongoDB"],
+    specialStyling: false,
   },
   {
     name: "Burger Builder",
@@ -56,6 +60,7 @@ const projectsData = [
     link: "https://jooburger-936ed.firebaseapp.com/",
     github: "https://github.com/youssefMoJo/JooBurger",
     Technologies: ["React", "Node", "Firebase"],
+    specialStyling: false,
   },
 ];
 

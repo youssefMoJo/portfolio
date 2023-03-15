@@ -1,6 +1,5 @@
 import "../Styles/ProjectCard.css";
 import { GoMarkGithub } from "react-icons/go";
-import { color } from "framer-motion";
 
 const ProjectCard = (props) => {
   const technologiesColors = {
@@ -38,19 +37,33 @@ const ProjectCard = (props) => {
         </div>
       </div>
       <div className="description">{props.discription}</div>
-
-      <div className="technologies">
-        {props.techUsed.map((tech, i) => {
-          return (
-            <div
-              key={i}
-              style={{ color: technologiesColors[tech], marginRight: "10px" }}
-            >
-              #{tech}
-            </div>
-          );
-        })}
-      </div>
+      {props.specialStyling ? (
+        <div className="technologiesWithSpecialStyling">
+          {props.techUsed.map((tech, i) => {
+            return (
+              <div
+                key={i}
+                style={{ color: technologiesColors[tech], marginRight: "10px" }}
+              >
+                #{tech}
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <div className="technologies">
+          {props.techUsed.map((tech, i) => {
+            return (
+              <div
+                key={i}
+                style={{ color: technologiesColors[tech], marginRight: "10px" }}
+              >
+                #{tech}
+              </div>
+            );
+          })}
+        </div>
+      )}
 
       <div className="links">
         <a

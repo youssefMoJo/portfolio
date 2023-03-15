@@ -22,6 +22,7 @@ const Projects = () => {
               link={project.link}
               techUsed={project.Technologies}
               github={project.github}
+              specialStyling={project.specialStyling}
             />
           );
         })}
