@@ -156,3 +156,7 @@
     cursor: pointer;
     color: #f4f4f5;
 }
+
+.gitHubButton:hover {
+    color: #bfbfce;
+}
