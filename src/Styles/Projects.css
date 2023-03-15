@@ -30,3 +30,14 @@
   flex-wrap: wrap;
 }
 
+
+@media only screen and (max-width: 555px){
+  .ProjectsContainer {
+    margin-left: -8px;
+    width: 100%;
+  }
+
+  .ProjectsTitle {
+    font-size: 4rem;
+  }
+}

@@ -34,22 +34,30 @@
     margin-bottom: 15px;
     align-items: center;
     height: 13%;
+    /* background-color: #0046FB; */
 }
 
 .titleSectionLeftSide {
     width: 50%;
+    /* background-color: #6e6f72; */
+    height: 90%;
 }
 
 .title {
     font-family: 'Iceland', cursive;
     font-family: 'Kaisei Decol', serif;
     font-size: 1.7rem;
+    height: 55%;
+    /* background-color: greenyellow; */
 }
 
 .HeartDiseasePrediction {
     font-family: 'Iceland', cursive;
     font-family: 'Kaisei Decol', serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    height: 53%;
+    padding-top: 1%;
+    /* background-color: greenyellow; */
 }
 
 .titleSectionMiddleLine {
@@ -67,15 +75,20 @@
 }
 
 .titleSectionRighttSide {
-    padding-top: 11px;
+    /* padding-top: 11px; */
+    /* background-color: #6e6f72; */
+    height: 90%;
 }
 
 .appType   {
-    font-size: large;
+    /* font-size: large; */
+    font-size: 1.7rem;
     font-family: 'Iceland', cursive;
     font-family: 'Kaisei Decol', serif;
-    margin-bottom: 7px;
+    /* margin-bottom: 7px; */
     color: rgb(224, 219, 219);
+    height: 55%;
+    /* background-color: rgb(108, 145, 54); */
 }
 
 .teamOrSoloProject {
@@ -160,3 +173,34 @@
 .gitHubButton:hover {
     color: #bfbfce;
 }
+
+@media only screen and (max-width: 555px){
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .HeartDiseasePrediction {
+        font-size: 0.8rem;
+    }
+
+    .date {
+        font-size: 15px;
+    }
+
+    .teamOrSoloProject {
+        font-size: 15px;
+    }
+
+    .appType {
+        font-size: 1.3rem;
+    }
+
+    .technologies {
+        font-size: large;
+    }
+    
+    .technologiesWithSpecialStyling {
+        font-size: large;
+    }
+
+  }
