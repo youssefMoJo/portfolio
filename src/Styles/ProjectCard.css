@@ -196,11 +196,10 @@
     }
 
     .technologies {
-        font-size: large;
+        font-size: 1.1rem;
     }
     
     .technologiesWithSpecialStyling {
-        font-size: large;
+        font-size: 1rem;
     }
-
   }
