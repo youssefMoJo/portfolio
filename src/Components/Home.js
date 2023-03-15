@@ -39,6 +39,9 @@ const Home = () => {
             src={require("../Assets/HiWord.png")}
             alt="Hi"
           />
+          <div className="smallCirleCodeDesign">
+            <div className="codeSign">{`</`}</div>
+          </div>
         </div>
       </div>
     </div>

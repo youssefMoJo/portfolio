@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@400;500&display=swap');
 
 .HomeContainer {
     display: flex;
@@ -113,7 +113,7 @@
     border-style: solid;
     border-color: #00d0ff;
     border-width: 45px;
-    box-shadow: 0px 0px 1000px 0px #00d0ff;
+    box-shadow: 0px 0px 1000px 10px #00d0ff;
     margin-left: 10rem;
 }
 
@@ -127,6 +127,24 @@
 @keyframes hiChar  {
     0%   {  opacity: 0;}
     100%  {left:90px; top:0px; opacity: 1;} 
+}
+
+.smallCirleCodeDesign {
+    width: 4rem;
+    height: 4rem;
+    background-color: #2A2A2A;
+    border-radius: 100%;
+    margin-top: -120%;
+    margin-left: 85%;
+}
+
+.codeSign {
+    color: #01d0ff;
+    font-family: 'Iceland', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-left: 8px;
 }
 
 .HiWord {
