@@ -1,6 +1,7 @@
 import "../Styles/Home.css";
 import { BiDownload } from "react-icons/bi";
 import MyResume from "../Files/resume.pdf";
+import { SlSocialLinkedin } from "react-icons/sl";
 
 const Home = () => {
   return (
@@ -42,6 +43,9 @@ const Home = () => {
           <div className="smallCirleCodeDesign">
             <div className="codeSign">{`</`}</div>
           </div>
+          <a className="smallCirleLinkedinSign" href="/home">
+            in
+          </a>
         </div>
       </div>
     </div>
