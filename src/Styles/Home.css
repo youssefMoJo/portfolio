@@ -147,10 +147,6 @@
     padding-left: 8px;
 }
 
-.smallCirleLinkedinSign:hover {
-    background-color: #0046FB;
-}
-
 .smallCirleLinkedinSign {
     font-size: 2.5rem;
     text-decoration:none; 
@@ -159,7 +155,9 @@
     background-color: #0a66c2;
     border-radius: 100%;
     padding: 0.2rem 1.5rem 0.2rem 1rem;
-    margin-left: -3rem;
+    margin-left: -1rem;
+    margin-top: -3rem;
+    position: absolute;
 }
 
 .smallCirleLinkedinSign:hover {
@@ -189,25 +187,25 @@
     }
 
     .TransparentCircleShape {
-        width: 10rem;
-        height: 10rem;
+        width: 15rem;
+        height: 15rem;
         margin-left: 0rem;
         border-width: 35px;
     }
 
     .HiChar {
-        width: 15rem;
+        width: 20rem;
     }
 
     .HiWord {
-        width: 15rem;
+        width: 20rem;
         margin-left: -2rem;
     }
 
     .smallCirleCodeDesign {
         width: 3rem;
         height: 3rem;
-        margin-top: -130%;
+        margin-top: -125%;
         margin-left: 75%;
     }
     
@@ -215,6 +213,14 @@
         font-size: 2.5rem;
         padding-top: 5px;
         padding-left: 4px;
+    }
+
+    .smallCirleLinkedinSign {
+        font-size: 2rem;
+        padding: 0 1rem 0 0.5rem;
+        margin-top: -1.6rem;
+        margin-left: -1rem;
+        position: absolute;
     }
 }
 
