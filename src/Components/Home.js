@@ -43,7 +43,12 @@ const Home = () => {
           <div className="smallCirleCodeDesign">
             <div className="codeSign">{`</`}</div>
           </div>
-          <a className="smallCirleLinkedinSign" href="/home">
+          <a
+            className="smallCirleLinkedinSign"
+            href="https://www.linkedin.com/in/youssef-mohamed-812b4b18a/"
+            rel="noreferrer"
+            target="_blank"
+          >
             in
           </a>
         </div>
