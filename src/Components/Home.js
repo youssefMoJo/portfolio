@@ -2,6 +2,7 @@ import "../Styles/Home.css";
 import { BiDownload } from "react-icons/bi";
 import MyResume from "../Files/resume.pdf";
 import { SlSocialLinkedin } from "react-icons/sl";
+import { GoMarkGithub } from "react-icons/go";
 
 const Home = () => {
   return (
@@ -50,6 +51,16 @@ const Home = () => {
             target="_blank"
           >
             in
+          </a>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href={"https://github.com/youssefMoJo"}
+          >
+            <img
+              className="gitHubButtonInHomeImg"
+              src={require("../Assets/github.png")}
+            />
           </a>
         </div>
       </div>
