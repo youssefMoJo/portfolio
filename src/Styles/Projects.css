@@ -56,7 +56,25 @@
     width: 100%;
   }
 
+  .ProjectTitleContainer {
+    flex-direction: column;
+    row-gap: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
   .ProjectsTitle {
     font-size: 4rem;
   }
+
+  .ProjectsSittingImg {
+    height: 10rem;
+    
+  }
+
+  .line {
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
 }
