@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@500&display=swap');
 
 
-.AboutSection {
+.AboutContainer {
+    width: 88%;
+    margin-left: 12%;
+}
+
+.AboutTitle {
+  font-size: 5rem;
+  font-family: 'Iceland', cursive;
+  margin-bottom: 35px;
+  margin-top: 2.5rem;
+}
+
+.AboutParagraphContainer {
+    padding-right: 20%;
+}
+
+.AboutParagraphQuestion {
     font-family: 'Iceland', cursive;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.AboutParagraph {
+    font-size: 2.5rem;
+    font-family: 'Iceland', cursive;
+    padding-bottom: 2rem;
+    text-align: justify;
 }
