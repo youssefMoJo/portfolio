@@ -19,6 +19,19 @@
     padding-right: 20%;
 }
 
+.AboutParagraphQuestionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutChar {
+    height: 10rem;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .AboutParagraphQuestion {
     font-family: 'Iceland', cursive;
     margin-bottom: 2.5rem;
@@ -30,4 +43,27 @@
     font-family: 'Iceland', cursive;
     padding-bottom: 2rem;
     text-align: justify;
+}
+
+@media only screen and (max-width: 980px){
+    .AboutParagraph {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .AboutParagraph {
+        font-size: 1.3rem;
+        width: 115%;
+    }
+
+    .AboutTitle {
+        font-size: 4rem;
+    }
+
+    .AboutContainer {
+        width: 95%;
+        margin-left: 5%;
+    }
 }

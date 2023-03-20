@@ -7,7 +7,14 @@ const About = () => {
         <span className="Hashtag">#</span> About Me
       </div>
       <div className="AboutParagraphContainer">
-        <h1 className="AboutParagraphQuestion">/Who am i?</h1>
+        <div className="AboutParagraphQuestionContainer">
+          <img
+            className="AboutChar"
+            src={require("../Assets/whoAmI.png")}
+            alt="Hi"
+          />
+          <h1 className="AboutParagraphQuestion">/Who am i?</h1>
+        </div>
         <p className="AboutParagraph">
           I have a Bachelor's degree in Computer Science, which I completed in
           December 2022. I have acquired a vast array of skills over the past 5
