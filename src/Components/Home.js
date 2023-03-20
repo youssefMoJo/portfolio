@@ -1,8 +1,8 @@
 import "../Styles/Home.css";
 import { BiDownload } from "react-icons/bi";
 import MyResume from "../Files/resume.pdf";
-import { SlSocialLinkedin } from "react-icons/sl";
-import { GoMarkGithub } from "react-icons/go";
+// import { SlSocialLinkedin } from "react-icons/sl";
+// import { GoMarkGithub } from "react-icons/go";
 
 const Home = () => {
   return (
