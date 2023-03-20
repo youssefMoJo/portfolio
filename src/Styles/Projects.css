@@ -4,14 +4,33 @@
 
 .ProjectsContainer {
     width: 88%;
-    /* margin-left: 16rem; */
     margin-left: 12%;
+}
+
+.ProjectTitleContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 
 .ProjectsTitle {
   font-size: 5rem;
   font-family: 'Iceland', cursive;
   margin-bottom: 35px;
+}
+
+.ProjectsSittingImg {
+  height: 15rem;
+  margin-top: -5.5rem;
+}
+
+.line {
+  width: 13rem;
+  height: 0.4rem;
+  margin-left: 1rem;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #00cffd, #6b66a8, #6b66a8);
+  border-radius: 30%;
 }
 
 .Hashtag {

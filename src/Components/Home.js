@@ -58,6 +58,7 @@ const Home = () => {
             <img
               className="gitHubButtonInHomeImg"
               src={require("../Assets/github.png")}
+              alt={"gitHub"}
             />
           </a>
         </div>

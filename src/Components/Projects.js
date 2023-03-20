@@ -5,8 +5,16 @@ import projectsData from "./ProjectsData";
 const Projects = () => {
   return (
     <div className="ProjectsContainer">
-      <div className="ProjectsTitle">
-        <span className="Hashtag">#</span> Projects
+      <div className="ProjectTitleContainer">
+        <div className="ProjectsTitle">
+          <span className="Hashtag">#</span> Projects
+        </div>
+        <div className="line"></div>
+        <img
+          className="ProjectsSittingImg"
+          src={require("../Assets/sitting and reading trans.png")}
+          alt="Hi"
+        />
       </div>
 
       <div className="cardsContainer">
