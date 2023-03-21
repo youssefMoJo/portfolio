@@ -92,7 +92,7 @@ header {
 }
  
   
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1065px) {
   .responsiveLogo {
     visibility: visible;
     opacity: 1;
@@ -132,6 +132,7 @@ header {
     background-color: rgb(10, 9, 26);
     transition: 1s;
     font-size: larger;
+    z-index: 5;
   }
 
   .responsive_nav {
