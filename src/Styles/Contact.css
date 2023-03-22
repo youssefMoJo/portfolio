@@ -32,7 +32,7 @@
 .ContactBoxContainer {
     background-color: #22273E;
     width: 70%;
-    height: 70vh;
+    height: auto;
     border-radius: 2%;
     padding: 20px;
     margin-left: 10%;
@@ -177,7 +177,7 @@
     }
 
     .ContactBoxContainer {
-        margin-left: 0%;
+        margin-left: -3%;
         width: 85%;
         margin-top: 1rem;
     }

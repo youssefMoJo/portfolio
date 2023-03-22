@@ -1,4 +1,5 @@
 import "../Styles/Contact.css";
+import ContactMeForm from "./ContactMeForm";
 
 const Contact = () => {
   return (
@@ -63,6 +64,7 @@ const Contact = () => {
             My GitHub
           </a>
         </div>
+        <ContactMeForm />
       </div>
     </div>
   );
