@@ -4,7 +4,7 @@ import MyResume from "../Files/resume.pdf";
 
 const Home = () => {
   return (
-    <div className="HomeContainer">
+    <div id="home" className="HomeContainer">
       <div className="LeftSideContainer">
         <div className="SideDecorationCircleShape">
           <div className="SideDecorationLineShape"></div>

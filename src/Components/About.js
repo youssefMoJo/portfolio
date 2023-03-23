@@ -2,7 +2,7 @@ import "../Styles/About.css";
 
 const About = () => {
   return (
-    <div className="AboutContainer">
+    <div id="aboutme" className="AboutContainer">
       <div className="AboutTitle">
         <span className="Hashtag">#</span> About Me
       </div>

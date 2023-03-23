@@ -3,7 +3,7 @@ import ContactMeForm from "./ContactMeForm";
 
 const Contact = () => {
   return (
-    <div className="ContactContainer">
+    <div id="contact" className="ContactContainer">
       <div className="ContactTitle">
         <span className="Hashtag">#</span> Contact
       </div>

@@ -5,7 +5,9 @@ import "../Styles/Navbar.css";
 const Navbar = () => {
   let firstPartNavBarContent = ["Home", "Projects"];
   let secondPartNavBarContent = ["About Me", "Contact"];
+
   const navRef = useRef();
+
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
@@ -23,7 +25,7 @@ const Navbar = () => {
       <nav ref={navRef}>
         {firstPartNavBarContent.map((c, i) => {
           return (
-            <a className="NavbarItems" key={i} href="#/">
+            <a className="NavbarItems" key={i} href={`#${c.toLowerCase()}`}>
               <span className="Hashtag">#</span>
               {c}
             </a>
@@ -40,7 +42,11 @@ const Navbar = () => {
 
         {secondPartNavBarContent.map((c, i) => {
           return (
-            <a className="NavbarItems" key={i} href="#/">
+            <a
+              className="NavbarItems"
+              key={i}
+              href={`#${c.toLowerCase().replace(/\s/g, "")}`}
+            >
               <span className="Hashtag">#</span>
               {c}
             </a>

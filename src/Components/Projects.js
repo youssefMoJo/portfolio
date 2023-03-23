@@ -4,7 +4,7 @@ import projectsData from "./ProjectsData";
 
 const Projects = () => {
   return (
-    <div className="ProjectsContainer">
+    <div id="projects" className="ProjectsContainer">
       <div className="ProjectTitleContainer">
         <div className="ProjectsTitle">
           <span className="Hashtag">#</span> Projects
