@@ -8,16 +8,16 @@ const ContactMeForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [messageSent, setMessageSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_8s9emog",
         "template_zg89kgx",
-        form.current,
-        "1ahAP2W-e2R8lTz5I"
+        form.current
+        // "1ahAP2W-e2R8lTz5I"
       )
       .then(
         (result) => {
@@ -26,6 +26,10 @@ const ContactMeForm = () => {
           setName("");
           setEmail("");
           setMessage("");
+          setIsActive(true);
+          setTimeout(() => {
+            getTheSendBtnAgain();
+          }, 4000);
         },
         (error) => {
           console.log(error.text);
@@ -33,8 +37,8 @@ const ContactMeForm = () => {
       );
   };
 
-  const handleClick = (event) => {
-    setIsActive((current) => !current);
+  const getTheSendBtnAgain = () => {
+    setIsActive(false);
   };
 
   const changeName = (e) => {
@@ -51,9 +55,15 @@ const ContactMeForm = () => {
 
   return (
     <div className="ContactMeFormContainer">
+      <img
+        className="contactStand"
+        src={require("../Assets/contactStand.png")}
+        alt="Hi"
+      />
       <form ref={form} onSubmit={sendEmail}>
         <label className="labels">Name</label>
         <input
+          required
           type="text"
           name="user_name"
           onChange={changeName}
@@ -62,16 +72,21 @@ const ContactMeForm = () => {
 
         <label className="labels">Email</label>
         <input
+          required
           type="email"
           name="user_email"
           onChange={chaneEmail}
           value={email}
         />
         <label className="labels">Message</label>
-        <textarea name="message" onChange={chaneMessage} value={message} />
+        <textarea
+          required
+          name="message"
+          onChange={chaneMessage}
+          value={message}
+        />
         <button
           className={isActive ? "active" : ""}
-          onClick={handleClick}
           id="sendBtn"
           type="submit"
           value="Send"
