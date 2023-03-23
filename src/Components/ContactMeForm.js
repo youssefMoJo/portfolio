@@ -1,6 +1,8 @@
 import "../Styles/ContactMeForm.css";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactMeForm = () => {
   const form = useRef();
@@ -8,33 +10,48 @@ const ContactMeForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [messageSent, setMessageSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_8s9emog",
-        "template_zg89kgx",
-        form.current
-        // "1ahAP2W-e2R8lTz5I"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("Message is sent");
-          setName("");
-          setEmail("");
-          setMessage("");
-          setIsActive(true);
-          setTimeout(() => {
-            getTheSendBtnAgain();
-          }, 4000);
-        },
-        (error) => {
-          console.log(error.text);
+    try {
+      emailjs
+        .sendForm(
+          "service_8s9emog",
+          "template_zg89kgx",
+          form.current,
+          "1ahAP2W-e2R8lTz5I"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("Message is sent");
+            setName("");
+            setEmail("");
+            setMessage("");
+            setIsActive(true);
+            setTimeout(() => {
+              getTheSendBtnAgain();
+            }, 4000);
+          },
+          (error) => {
+            // console.log(error.text);
+          }
+        );
+    } catch (error) {
+      toast.error(
+        "Sorry, I'm having trouble sending your message. Please try again later.",
+        {
+          position: "top-center",
+          autoClose: 6500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
         }
       );
+    }
   };
 
   const getTheSendBtnAgain = () => {
@@ -69,7 +86,7 @@ const ContactMeForm = () => {
           onChange={changeName}
           value={name}
         />
-
+        <ToastContainer />
         <label className="labels">Email</label>
         <input
           required
