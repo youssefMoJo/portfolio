@@ -68,11 +68,18 @@
     font-family: 'Iceland', cursive;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    transition: box-shadow 0.3s;
+}
+
+.contactEmailButton:hover {
+    background-color: #0e1316;
+    box-shadow: 0px 0px 50px 5px #1482b6;
 }
 
 .contactEmailImg {
     height: 2rem;
     width: 2rem;
+   
 }
 
 .contactPhoneButton {
@@ -91,6 +98,12 @@
     font-family: 'Iceland', cursive;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    transition: box-shadow 0.3s;
+}
+
+.contactPhoneButton:hover {
+    background-color: #0e1316;
+    box-shadow: 0px 0px 50px 5px rgb(3, 153, 3);
 }
 
 .contactPhoneImg {
@@ -114,6 +127,12 @@
     font-family: 'Iceland', cursive;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    transition: box-shadow 0.3s;
+}
+
+.contactLinkedinButton:hover {
+    background-color: #0e1316;
+    box-shadow: 0px 0px 50px 5px rgb(34, 150, 204);
 }
 
 .contactLinkedinImg {
@@ -137,6 +156,12 @@
     font-family: 'Iceland', cursive;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    transition: box-shadow 0.3s;
+}
+
+.contactGithubButton:hover {
+    background-color: #0e1316;
+    box-shadow: 0px 0px 50px 5px rgb(3, 148, 206);
 }
 
 .contactGithubImg {
