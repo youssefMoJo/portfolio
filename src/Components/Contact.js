@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="ContactContainer">
       <div className="ContactTitle">
-        <span className="Hashtag">#</span> About Me
+        <span className="Hashtag">#</span> Contact
       </div>
 
       <div className="ContactTitleContainer">
