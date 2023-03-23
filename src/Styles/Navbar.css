@@ -6,6 +6,8 @@ header {
   justify-content: center;
   height: 60px;
   padding: 0 2rem;
+  /* position: fixed; */
+  /* width: 100%; */
 }
 
 .NavbarItems {
@@ -143,3 +145,16 @@ header {
     font-size: xx-large;
   }
 }
+
+/* @media only screen and (max-width: 725px) {
+  header {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    width: 81%;
+    margin-bottom: 3rem;
+  }
+} */

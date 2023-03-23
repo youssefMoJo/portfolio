@@ -12,6 +12,10 @@ const Navbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
 
+  const removeSideNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
   return (
     <header>
       <a className="responsiveLogo" href="#home">
@@ -25,7 +29,12 @@ const Navbar = () => {
       <nav ref={navRef}>
         {firstPartNavBarContent.map((c, i) => {
           return (
-            <a className="NavbarItems" key={i} href={`#${c.toLowerCase()}`}>
+            <a
+              onClick={() => removeSideNavbar()}
+              className="NavbarItems"
+              key={i}
+              href={`#${c.toLowerCase()}`}
+            >
               <span className="Hashtag">#</span>
               {c}
             </a>
@@ -43,6 +52,7 @@ const Navbar = () => {
         {secondPartNavBarContent.map((c, i) => {
           return (
             <a
+              onClick={() => removeSideNavbar()}
               className="NavbarItems"
               key={i}
               href={`#${c.toLowerCase().replace(/\s/g, "")}`}
