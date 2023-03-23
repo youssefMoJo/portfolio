@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <a className="responsiveLogo" href="#/">
+      <a className="responsiveLogo" href="#home">
         <img
           className="responsiveLogo"
           src={require("../Assets/Logo.png")}
@@ -32,7 +32,7 @@ const Navbar = () => {
           );
         })}
 
-        <a className="Logo" href="#/">
+        <a className="Logo" href="#home">
           <img
             className="Logo"
             src={require("../Assets/Logo.png")}
