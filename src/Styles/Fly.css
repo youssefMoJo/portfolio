@@ -1,14 +1,32 @@
 .character-container {
-    position: absolute;
-    animation: mymove 10s;
+    position: fixed;
+    /* animation: mymove 10s; */
     width: 0;
-    height: 0;    
+    height: 0;  
+    bottom: 7rem;
+    transition: transform 1s;
+    /* transform: rotate(-10deg); */
+    cursor: pointer;
+    z-index: 100;
   }
 
-  /* @keyframes mymove {
-    from {top: 100rem; left: 0px;}
-    to {top: 20rem; left: 700px;}
-  } */
+.fly-up {
+  animation-name: fly-up;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fly-up {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(60rem, -80rem);
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
+}
 
   .flyingChar {
     width: 8rem;
@@ -27,11 +45,23 @@
     cursor: pointer;
     height: 7rem;
   }
-  
-  .character-container .visible {
+
+  .fly-up .visible {
     opacity: 1;
   }
+
+  /* .character-container:hover .visible {
+    opacity: 1;
+  } */
   
   .character-container .hidden {
     opacity: 0;
+  }
+
+  @media only screen and (max-width: 1630px) {
+    .character-container {
+      outline: none;
+      visibility: hidden;
+      opacity: 0;
+    }
   }
