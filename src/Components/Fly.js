@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import imageMain from "../Assets/fly1/main.png";
+import waitingToFly from "../Assets/fly1/waitingToFly.png";
 import image1 from "../Assets/fly1/fly1.png";
 import image2 from "../Assets/fly1/fly2.png";
 import image3 from "../Assets/fly1/fly3.png";
@@ -48,7 +49,7 @@ const Fly = () => {
     <div>
       {isScrolling && !isClicked && (
         <div onClick={scrollToTop} className="character-container">
-          <img alt="fly character" src={imageMain} className="flyingChar" />
+          <img alt="fly character" src={waitingToFly} className="flyingChar" />
           <img
             src={image1}
             className={currentIndex === 0 ? "visible rocketFire" : "hidden"}
