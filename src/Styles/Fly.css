@@ -3,13 +3,15 @@
     /* animation: mymove 10s; */
     width: 0;
     height: 0;  
-    bottom: 7.5rem;
+    bottom: 7rem;
     transition: transform 1s;
+    transform: rotate(-10deg);
+    cursor: pointer;
   }
 
 .fly-up {
   animation-name: fly-up;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -18,7 +20,7 @@
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(50rem, -20rem);
+    transform: translate(60rem, -70rem);
   }
   100% {
     transform: translate(0, -100%);
@@ -42,8 +44,12 @@
     cursor: pointer;
     height: 7rem;
   }
-  
-  .character-container .visible {
+
+  .fly-up .visible {
+    opacity: 1;
+  }
+
+  .character-container:hover .visible {
     opacity: 1;
   }
   

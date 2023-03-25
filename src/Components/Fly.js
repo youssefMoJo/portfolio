@@ -44,15 +44,11 @@ const Fly = () => {
     return () => clearInterval(interval);
   }, []);
 
-  console.log(isClicked);
-
   return (
     <div>
       {isScrolling && !isClicked && (
         <div onClick={scrollToTop} className="character-container">
-          <a href="#">
-            <img alt="fly character" src={imageMain} className="flyingChar" />
-          </a>
+          <img alt="fly character" src={imageMain} className="flyingChar" />
           <img
             src={image1}
             className={currentIndex === 0 ? "visible rocketFire" : "hidden"}
@@ -86,9 +82,7 @@ const Fly = () => {
       )}
       {isClicked && (
         <div onClick={scrollToTop} className="character-container fly-up">
-          <a href="#">
-            <img alt="fly character" src={imageMain} className="flyingChar" />
-          </a>
+          <img alt="fly character" src={imageMain} className="flyingChar" />
           <img
             src={image1}
             className={currentIndex === 0 ? "visible rocketFire" : "hidden"}
