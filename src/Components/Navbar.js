@@ -16,6 +16,10 @@ const Navbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header>
       <a className="responsiveLogo" href="#home">
@@ -41,13 +45,12 @@ const Navbar = () => {
           );
         })}
 
-        <a className="Logo" href="#home">
-          <img
-            className="Logo"
-            src={require("../Assets/Logo.png")}
-            alt="Logo"
-          />
-        </a>
+        <img
+          onClick={scrollToTop}
+          className="Logo"
+          src={require("../Assets/Logo.png")}
+          alt="Logo"
+        />
 
         {secondPartNavBarContent.map((c, i) => {
           return (
