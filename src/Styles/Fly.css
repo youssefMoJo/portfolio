@@ -1,0 +1,37 @@
+.character-container {
+    position: absolute;
+    animation: mymove 10s;
+    width: 0;
+    height: 0;    
+  }
+
+  /* @keyframes mymove {
+    from {top: 100rem; left: 0px;}
+    to {top: 20rem; left: 700px;}
+  } */
+
+  .flyingChar {
+    width: 8rem;
+    position: absolute;
+    margin-top: -7rem;
+    margin-left: 4.3rem;
+    z-index: 1;
+  }
+  
+  .character-container .rocketFire {
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity;
+    cursor: pointer;
+    height: 7rem;
+  }
+  
+  .character-container .visible {
+    opacity: 1;
+  }
+  
+  .character-container .hidden {
+    opacity: 0;
+  }
