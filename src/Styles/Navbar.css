@@ -6,8 +6,15 @@ header {
   justify-content: center;
   height: 60px;
   padding: 0 2rem;
-  /* position: fixed; */
-  /* width: 100%; */
+  position: fixed;
+  width: 100%;
+  margin-left: -1rem;
+  z-index: 1000;
+  transition: background-color 0.5s ease;
+}
+
+header.scrolled {
+  background-color: #333;
 }
 
 .NavbarItems {
@@ -84,6 +91,10 @@ header {
   opacity: 0;
 }
 
+.nav-open-btn {
+  margin-top: 0.5rem;
+}
+
 
 .responsiveLogo {
   position: absolute;
@@ -101,19 +112,25 @@ header {
     opacity: 1;
   }
 
+  header {
+    background-color: #00cffd;
+    width:94%;
+  }
+
   .nav-btn {
     visibility: visible;
     opacity: 1;
   }
 
   .nav-open-btn {
-    margin-right: -100%;
+    /* margin-right: -100%; */
+    margin-left: 94%;
   }
 
   .nav-close-btn {
     position: absolute;
     top: 1rem;
-    right: 1rem;
+    right: 1.5rem;
   }
 
   .Logo {
@@ -139,11 +156,17 @@ header {
   }
 
   .responsive_nav {
-    transform: translateY(98vh);
+    transform: translateY(100%);
   }
 
   nav a {
     font-size: xx-large;
+  }
+}
+
+@media only screen and (max-width: 533px) {
+  header {
+    width:85%;
   }
 }
 
