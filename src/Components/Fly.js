@@ -49,6 +49,11 @@ const Fly = () => {
     <div>
       {isScrolling && !isClicked && (
         <div onClick={scrollToTop} className="character-container">
+          <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <img alt="fly character" src={waitingToFly} className="flyingChar" />
           <img
             src={image1}
