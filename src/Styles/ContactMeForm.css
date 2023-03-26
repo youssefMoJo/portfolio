@@ -16,7 +16,6 @@ form {
     flex-direction: column;
     width: 100%;
     font-size: 20px;
-    /* align-items: center; */
     margin-right: 20rem;
 }
 
@@ -126,7 +125,6 @@ input[type="submit"] {
 }
 
 .active{
-    /* background: #0c9e07; */
     background-color: #0c9e07;
     transition: 2s;
 }
