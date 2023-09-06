@@ -1,5 +1,18 @@
 const projectsData = [
   {
+    name: "Sparkle Drive",
+    date: "Aug. 2023",
+    appType: "Web App",
+    teamOrSoloProject: "Solo Project",
+    discription:
+      "Developed and launched the website with dynamic pricing, SMS order management, and user-friendly features, enhancing the customer experience and revenue potential.",
+    link: "https://sparkledrive.shop/",
+    github: "https://github.com/youssefMoJo/carWash",
+    Technologies: ["React", "Firebase"],
+    specialStyling: false,
+    imageName: "sparkleDrive.png",
+  },
+  {
     name: "MyFlex",
     date: "June 2020 – July 2020",
     appType: "Web App",
