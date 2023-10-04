@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
     Node: "#dadd14",
     "Python (pandas, NumPy, matplotlib, scikit-learn)": "#dadd14",
     "Socket.IO": "#ffffff",
-    Firebase: "#ff9a00",
+    "Firebase (Realtime DB, Hosting)": "#ff9a00",
     "AWS (DynamoDB, Cognito, API Gateway, Lambda)": "#ff9a00",
   };
 

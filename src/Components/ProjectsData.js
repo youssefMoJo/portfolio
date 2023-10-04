@@ -8,7 +8,7 @@ const projectsData = [
       "Developed and launched the website with dynamic pricing, SMS order management, and user-friendly features, enhancing the customer experience and revenue potential.",
     link: "https://sparkledrive.shop/",
     github: "https://github.com/youssefMoJo/carWash",
-    Technologies: ["React", "Firebase"],
+    Technologies: ["React", "Firebase (Realtime DB, Hosting)"],
     specialStyling: false,
     imageName: "sparkleDrive.png",
   },
@@ -28,7 +28,7 @@ const projectsData = [
   {
     name: "Heart Disease Prediction",
     date: "Oct. 2022 – Dec. 2022",
-    appType: "-",
+    appType: "ML",
     teamOrSoloProject: "Team Project",
     discription:
       "Applied Machine Learning methods and data preparation techniques to pre-process raw medical data and construct multiple predictive models.",
@@ -76,7 +76,7 @@ const projectsData = [
       "This web application enables users to customize their burgers by adding ingredients, view a visual representation of the burger created with CSS, and place an order.",
     link: "https://jooburger-936ed.firebaseapp.com/",
     github: "https://github.com/youssefMoJo/JooBurger",
-    Technologies: ["React", "Node", "Firebase"],
+    Technologies: ["React", "Node", "Firebase (Realtime DB, Hosting)"],
     specialStyling: false,
     imageName: "BurgerBuilder.png",
   },
