@@ -15,7 +15,7 @@ const Home = () => {
           <h2 className="MyNameSentence">
             I Am <span className="MyName">Youssef Mohamed</span>
           </h2>
-          <h2 className="Title">Full Stack Developer</h2>
+          <h2 className="Title">Software Developer</h2>
           <div className="ResumeButtonContainer">
             <a className="ResumeButton" href={MyResume}>
               Download Resume
