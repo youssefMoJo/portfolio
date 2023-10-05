@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@400;500;700&display=swap');
+
+.newCard {
+    width: 88%;
+    background: linear-gradient(259.16deg, #5bcd7a, black);
+    display: flex;
+}
+
+.newCard div:nth-child(1) {
+    flex: 1.7;
+}
+
+.newCard div:nth-child(2) {
+    flex: 2;
+}
+
+.leftSec {
+    margin: 40px;
+}
+
+.rightSec {
+    background-color: black;
+}
+
+.cardTitle {
+    font-family: 'Iceland', cursive;
+    font-family: 'Kaisei Decol', serif;
+    font-size: 2.3rem;
+    margin-bottom: 0.4rem;
+}
+
+.projectLabelsContainer {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.project-duration,
+.cardAppType,
+.cardTeamOrSoloProject {
+    padding: 4px 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.project-duration {
+    background-color: #3498db;
+}
+
+.cardAppType {
+    background-color: #bf3f31;
+}
+
+.cardTeamOrSoloProject {
+    background-color: rgb(23, 109, 59)
+}
+
+.cardDescription {
+    font-size: 1.3rem;
+    font-family: 'Kaisei Decol', serif;
+    margin-bottom: 2rem;
+}
+
+.cardTechnologiesContainer {
+    display: flex;
+    column-gap: 0.5rem;
+    row-gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.eachCardTech {
+    padding: 4px 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: hsla(0, 0%, 100%, .16);
+    font-size: 1.05rem;
+}
+
+.newCardLinks {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.newCardVisitProjectButton {
+    border: #cec4c4;
+    border-radius: 100px;
+    width: 90%;
+    padding: 8px 15px;
+    background-color: #0046FB;
+    cursor: pointer;
+    font-size: large;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #0046FB, #1664eb, #0891be, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.newCardVisitProjectButton:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.newCardVisitProjectButton:focus {
+    outline: none;
+}
+
+.newCardGitHubButton {
+    font-size: 2.6rem;
+    margin-left: 1rem;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #f4f4f5;
+}
+
+.newCardGitHubButton:hover {
+    color: #bfbfce;
+}

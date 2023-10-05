@@ -63,7 +63,7 @@
 .titleSectionMiddleLine {
     width: 2px;
     height: 4.5rem;
-    background-color:#02b8e0;
+    background-color: #02b8e0;
     margin-right: 0.5rem;
 }
 
@@ -80,7 +80,7 @@
     height: 90%;
 }
 
-.appType   {
+.appType {
     /* font-size: large; */
     font-size: 1.7rem;
     font-family: 'Iceland', cursive;
@@ -109,7 +109,7 @@
 .technologies {
     font-size: larger;
     color: #ffffff;
-    font-weight:bold;
+    font-weight: bold;
     height: 10%;
     display: flex;
 }
@@ -117,7 +117,7 @@
 .technologiesWithSpecialStyling {
     font-size: larger;
     color: #ffffff;
-    font-weight:bold;
+    font-weight: bold;
     height: 10%;
     display: flex;
     flex-direction: column;
@@ -174,7 +174,7 @@
     color: #bfbfce;
 }
 
-@media only screen and (max-width: 555px){
+@media only screen and (max-width: 555px) {
     .title {
         font-size: 1.3rem;
     }
@@ -198,8 +198,8 @@
     .technologies {
         font-size: 1rem;
     }
-    
+
     .technologiesWithSpecialStyling {
         font-size: 1rem;
     }
-  }
+}

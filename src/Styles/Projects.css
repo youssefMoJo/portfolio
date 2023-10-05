@@ -3,8 +3,8 @@
 
 
 .ProjectsContainer {
-    width: 88%;
-    margin-left: 12%;
+  width: 88%;
+  margin-left: 12%;
 }
 
 .ProjectTitleContainer {
@@ -34,12 +34,12 @@
 }
 
 .Hashtag {
-    background-image: linear-gradient(#00cffd, #ee0d0d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-family: 'Kaisei Decol', serif;
-    font-weight: bold;
+  background-image: linear-gradient(#00cffd, #ee0d0d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Kaisei Decol', serif;
+  font-weight: bold;
 }
 
 .cardsContainer {
@@ -50,7 +50,7 @@
 }
 
 
-@media only screen and (max-width: 555px){
+@media only screen and (max-width: 555px) {
   .ProjectsContainer {
     margin-left: -8px;
     width: 100%;
@@ -68,7 +68,7 @@
 
   .ProjectsSittingImg {
     height: 10rem;
-    
+
   }
 
   .line {

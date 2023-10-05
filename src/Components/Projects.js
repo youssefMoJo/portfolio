@@ -1,6 +1,7 @@
 import "../Styles/Projects.css";
 import ProjectCard from "./ProjectCard";
 import projectsData from "./ProjectsData";
+import NewProjectCard from "../Components/NewProjectCard";
 
 const Projects = () => {
   return (
@@ -35,7 +36,9 @@ const Projects = () => {
             />
           );
         })}
+        <NewProjectCard />
       </div>
+
     </div>
   );
 };
