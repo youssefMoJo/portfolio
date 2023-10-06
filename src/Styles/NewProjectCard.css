@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@400;500;700&display=swap');
 
 .newCard {
-    width: 88%;
+    width: 84%;
     background: linear-gradient(259.16deg, #5bcd7a, black);
     display: flex;
 }
@@ -20,7 +20,18 @@
 }
 
 .rightSec {
-    background-color: black;
+    /* background-color: black; */
+}
+
+.rightSecImage {
+    /* float: right; */
+    position: absolute;
+    margin-left: 5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.newCard:hover .rightSecImage {
+    transform: translateY(10px) translateX(10px);
 }
 
 .cardTitle {
@@ -37,7 +48,8 @@
 
 .project-duration,
 .cardAppType,
-.cardTeamOrSoloProject {
+.cardTeamOrSoloProject,
+.newCardGitHubButton {
     padding: 4px 15px;
     margin-right: 10px;
     border-radius: 20px;
@@ -68,6 +80,7 @@
     column-gap: 0.5rem;
     row-gap: 0.6rem;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 }
 
 .eachCardTech {
@@ -81,7 +94,6 @@
 .newCardLinks {
     display: flex;
     align-items: center;
-    margin-top: 15px;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -89,7 +101,7 @@
 .newCardVisitProjectButton {
     border: #cec4c4;
     border-radius: 100px;
-    width: 90%;
+    width: 40%;
     padding: 8px 15px;
     background-color: #0046FB;
     cursor: pointer;
@@ -117,11 +129,8 @@
 }
 
 .newCardGitHubButton {
-    font-size: 2.6rem;
-    margin-left: 1rem;
-    margin-top: 5px;
     cursor: pointer;
-    color: #f4f4f5;
+    background-color: #333;
 }
 
 .newCardGitHubButton:hover {

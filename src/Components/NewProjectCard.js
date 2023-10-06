@@ -12,6 +12,11 @@ const NewProjectCard = (props) => {
                     <span className="cardAppType">Mobile App</span>
                     <span className="cardTeamOrSoloProject">Solo Project
                     </span>
+                    <span className="newCardGitHubButton">
+                        <a rel="noreferrer" target="_blank" href={props.github}>
+                            <GoMarkGithub />  GitHub
+                        </a>
+                    </span>
                 </div>
 
                 <div className="cardDescription">This mobile application provides users with a pool of quotes, allowing them to add and remove quotes from their list and share them with others.
@@ -31,12 +36,15 @@ const NewProjectCard = (props) => {
                     >
                         VISIT THE WEBSITE
                     </a>
-                    <a rel="noreferrer" target="_blank" href={props.github}>
-                        <GoMarkGithub className="newCardGitHubButton" />
-                    </a>
+
                 </div>
             </div>
-            <div className="rightSec">2</div>
+            <div className="rightSec">
+                <img
+                    className="rightSecImage"
+                    src={require("../Assets/NewSparkleDrive.png")}
+                />
+            </div>
         </div>
     )
 }
