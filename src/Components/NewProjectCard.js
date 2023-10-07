@@ -2,8 +2,11 @@ import "../Styles/NewProjectCard.css"
 import { GoMarkGithub } from "react-icons/go";
 
 const NewProjectCard = (props) => {
+    const newCard = props.isEven ? 'newCard evenCard' : 'newCard oddCard';
+    const cardColorClass = props.cardColorClass || '';
+
     return (
-        <div className="newCard">
+        <div className={`${newCard} ${cardColorClass}`}>
             <div className="leftSec">
                 <div className="cardTitle">FadfadA</div>
 

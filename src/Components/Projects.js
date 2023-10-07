@@ -4,6 +4,9 @@ import projectsData from "./ProjectsData";
 import NewProjectCard from "../Components/NewProjectCard";
 
 const Projects = () => {
+
+  const cardColors = ["#5fd77e", "#1277fa", "#f55e45", "#6e46a6", "#a91d34"]
+
   return (
     <div id="projects" className="ProjectsContainer">
       <div className="ProjectTitleContainer">
@@ -20,9 +23,14 @@ const Projects = () => {
 
       <div className="cardsContainer">
         {projectsData.map((project, i) => {
+          const colorIndex = i % cardColors.length;
+          const cardColorClass = colorIndex < cardColors.length ? `color-${colorIndex + 1}` : '';
+
           return (
-            <ProjectCard
+            <NewProjectCard
               key={i}
+              cardColorClass={cardColorClass}
+              isEven={i % 2 === 0}
               name={project.name}
               date={project.date}
               appType={project.appType}
@@ -36,7 +44,6 @@ const Projects = () => {
             />
           );
         })}
-        <NewProjectCard />
       </div>
 
     </div>
