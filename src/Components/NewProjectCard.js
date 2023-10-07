@@ -40,6 +40,7 @@ const NewProjectCard = (props) => {
                 </div>
             </div>
             <div className="rightSec">
+                <span className="redGlow"></span>
                 <img
                     className="rightSecImage"
                     src={require("../Assets/NewSparkleDrive.png")}

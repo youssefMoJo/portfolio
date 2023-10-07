@@ -2,9 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@400;500;700&display=swap');
 
 .newCard {
+    position: relative;
     width: 84%;
-    background: linear-gradient(259.16deg, #5bcd7a, black);
+    background: linear-gradient(259.16deg, #5fd77e, black);
     display: flex;
+    transition: background 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.newCard:hover {
+    /* background: #02102c; */
+    background: linear-gradient(259.16deg, #02102c -.49%, #124)
+}
+
+.redGlow {
+    position: absolute;
+    background-color: #712d4a;
+    width: 300px;
+    height: 300px;
+    filter: blur(100px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-left: -4rem;
+}
+
+.newCard:hover .redGlow {
+    opacity: 1;
+    /* Set opacity to 1 on hover */
 }
 
 .newCard div:nth-child(1) {
@@ -17,6 +41,7 @@
 
 .leftSec {
     margin: 40px;
+    z-index: 1;
 }
 
 .rightSec {
