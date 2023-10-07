@@ -11,6 +11,8 @@
     box-shadow: 0px 0px 20px 1px rgba(65, 132, 234, 0.75);
 }
 
+
+
 .newCard:hover {
     background: linear-gradient(259.16deg, #02102c -0.49%, rgb(9, 23, 51));
 }
@@ -43,8 +45,6 @@
 .color-5 {
     background: linear-gradient(259.16deg, #a91d34, black);
 }
-
-
 
 .redGlow {
     position: absolute;
@@ -102,6 +102,7 @@
 .projectLabelsContainer {
     display: flex;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .project-duration,
@@ -200,4 +201,71 @@
 
 .newCardGitHubButton:hover {
     color: #bfbfce;
+}
+
+/* Change flex direction to column for smaller screens */
+@media only screen and (max-width: 555px) {
+    .newCard {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .projectLabelsContainer .newCardGitHubButton {
+        order: 2;
+    }
+
+    .project-duration,
+    .cardAppType,
+    .cardTeamOrSoloProject,
+    .newCardGitHubButton {
+        padding: 4px 15px;
+        margin-right: 7px;
+        margin-bottom: 7px;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .projectLabelsContainer {
+        margin-bottom: 1rem;
+    }
+
+    .cardDescription {
+        font-size: 17px;
+        margin-bottom: 1rem;
+    }
+
+    .newCardVisitProjectButton {
+        width: 80%;
+    }
+
+    .rightSecImage {
+        position: relative;
+        margin-left: 0rem;
+        width: 100%;
+        margin-top: -2rem;
+    }
+
+    /* Define classes for each color from cardColors array */
+    .color-1 {
+        background: linear-gradient(0deg, #5fd77e, black);
+    }
+
+    .color-2 {
+        background: linear-gradient(-180deg, black, #1277fa);
+    }
+
+    .color-3 {
+        background: linear-gradient(0deg, #f55e45, black);
+    }
+
+    .color-4 {
+        background: linear-gradient(-180deg, black, #6e46a6);
+    }
+
+    .color-5 {
+        background: linear-gradient(0deg, #a91d34, black);
+    }
+
 }

@@ -10,12 +10,12 @@ const NewProjectCard = (props) => {
 
             <div className="leftSec">
 
-                <div className="cardTitle">FadfadA</div>
+                <div className="cardTitle">{props.name}</div>
 
                 <div className="projectLabelsContainer">
-                    <span class="project-duration">3 months</span>
-                    <span className="cardAppType">Mobile App</span>
-                    <span className="cardTeamOrSoloProject">Solo Project
+                    <span class="project-duration">{props.date}</span>
+                    <span className="cardAppType">{props.appType}</span>
+                    <span className="cardTeamOrSoloProject">{props.teamOrSoloProject}
                     </span>
                     <span className="newCardGitHubButton">
                         <a rel="noreferrer" target="_blank" href={props.github}>
@@ -24,13 +24,15 @@ const NewProjectCard = (props) => {
                     </span>
                 </div>
 
-                <div className="cardDescription">This mobile application provides users with a pool of quotes, allowing them to add and remove quotes from their list and share them with others.
+                <div className="cardDescription"> {props.discription}
                 </div>
 
                 <div className="cardTechnologiesContainer">
-                    <span className="eachCardTech">React Native</span>
-                    <span className="eachCardTech">Node</span>
-                    <span className="eachCardTech">Firebase ( Realtime DB, Hosting )</span>
+                    {props.techUsed.map((tech, i) => {
+                        return (
+                            <span className="eachCardTech">{tech}</span>
+                        );
+                    })}
                 </div>
 
                 <div className="newCardLinks">
@@ -38,6 +40,7 @@ const NewProjectCard = (props) => {
                         className="newCardVisitProjectButton"
                         rel="noreferrer"
                         target="_blank"
+                        href={props.link}
                     >
                         VISIT THE WEBSITE
                     </a>
@@ -49,7 +52,7 @@ const NewProjectCard = (props) => {
                 <img
                     data-aos={props.isEven ? "fade-left" : "fade-right"}
                     className="rightSecImage"
-                    src={require("../Assets/NewSparkleDrive.png")}
+                    src={require(`../Assets/${props.imageName}`)}
                 />
             </div>
         </div>

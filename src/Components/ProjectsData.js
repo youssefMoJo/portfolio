@@ -10,7 +10,7 @@ const projectsData = [
     github: "https://github.com/youssefMoJo/carWash",
     Technologies: ["React", "Firebase (Realtime DB, Hosting)"],
     specialStyling: false,
-    imageName: "sparkleDrive.png",
+    imageName: "NsparkleDrive.png",
   },
   {
     name: "MyFlex",
@@ -23,7 +23,7 @@ const projectsData = [
     github: "https://github.com/MyFelx/App",
     Technologies: ["React", "Node", "MongoDB"],
     specialStyling: false,
-    imageName: "Myflex.png",
+    imageName: "NMyflex.png",
   },
   {
     name: "Heart Disease Prediction",
@@ -36,7 +36,7 @@ const projectsData = [
     github: "https://github.com/ksfarag/Heart-Disease-Prediction-Using-ML",
     Technologies: ["Python (pandas, NumPy, matplotlib, scikit-learn)"],
     specialStyling: false,
-    imageName: "HeartDiseasePrediction.jpg",
+    imageName: "NHeartDiseasePrediction.jpg",
   },
   {
     name: "Quotes",
@@ -52,7 +52,7 @@ const projectsData = [
       "AWS (DynamoDB, Cognito, API Gateway, Lambda)",
     ],
     specialStyling: true,
-    imageName: "Quotes.png",
+    imageName: "NQuotes.png",
   },
   {
     name: "FadfadA",
@@ -65,7 +65,7 @@ const projectsData = [
     github: "https://github.com/youssefMoJo/Fadfada",
     Technologies: ["React", "Node", "Socket IO"],
     specialStyling: false,
-    imageName: "FadfadA.png",
+    imageName: "NFadfadA.png",
   },
   {
     name: "Burger Builder",
@@ -78,7 +78,7 @@ const projectsData = [
     github: "https://github.com/youssefMoJo/JooBurger",
     Technologies: ["React", "Node", "Firebase (Realtime DB, Hosting)"],
     specialStyling: false,
-    imageName: "BurgerBuilder.png",
+    imageName: "NBurgerBuilder.png",
   },
 ];
 
