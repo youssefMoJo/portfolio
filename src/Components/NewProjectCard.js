@@ -6,8 +6,10 @@ const NewProjectCard = (props) => {
     const cardColorClass = props.cardColorClass || '';
 
     return (
-        <div className={`${newCard} ${cardColorClass}`}>
+        <div data-aos="flip-down" className={`${newCard} ${cardColorClass}`}>
+
             <div className="leftSec">
+
                 <div className="cardTitle">FadfadA</div>
 
                 <div className="projectLabelsContainer">
@@ -45,6 +47,7 @@ const NewProjectCard = (props) => {
             <div className="rightSec">
                 <span className="redGlow"></span>
                 <img
+                    data-aos={props.isEven ? "fade-left" : "fade-right"}
                     className="rightSecImage"
                     src={require("../Assets/NewSparkleDrive.png")}
                 />
