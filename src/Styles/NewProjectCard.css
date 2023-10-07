@@ -4,7 +4,6 @@
 .newCard {
     position: relative;
     width: 84%;
-    /* background: linear-gradient(259.16deg, #5fd77e, black); */
     display: flex;
     transition: background 2s linear;
     overflow: hidden;
@@ -188,6 +187,13 @@
 .newCardGitHubButton {
     cursor: pointer;
     background-color: #333;
+}
+
+.newCardGitHubButton a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Use the default text color */
 }
 
 .newCardGitHubButton:hover {
