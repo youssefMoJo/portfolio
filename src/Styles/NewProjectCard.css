@@ -11,8 +11,6 @@
     box-shadow: 0px 0px 20px 1px rgba(65, 132, 234, 0.75);
 }
 
-
-
 .newCard:hover {
     background: linear-gradient(259.16deg, #02102c -0.49%, rgb(9, 23, 51));
 }
@@ -74,14 +72,16 @@
     z-index: 1;
 }
 
-.rightSec {
-    /* background-color: black; */
-}
+.rightSec {}
 
 .rightSecImage {
     position: absolute;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
     transition: transform 0.3s ease-in-out;
+}
+
+.evenCard .rightSecImage {
+    margin-left: 5rem;
 }
 
 .evenCard:hover .rightSecImage {
@@ -111,6 +111,7 @@
 .newCardGitHubButton {
     padding: 4px 15px;
     margin-right: 10px;
+    margin-bottom: 7px;
     border-radius: 20px;
     color: white;
     font-weight: bold;
@@ -203,8 +204,33 @@
     color: #bfbfce;
 }
 
+@media only screen and (max-width: 1800px) {
+    .rightSecImage {
+        width: 45%;
+    }
+
+    .evenCard .rightSecImage {
+        margin-left: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .rightSecImage {
+        width: 45%;
+        top: 30%;
+    }
+
+    .evenCard .rightSecImage {
+        margin-left: 0rem;
+    }
+
+    .newCardVisitProjectButton {
+        width: auto;
+    }
+}
+
 /* Change flex direction to column for smaller screens */
-@media only screen and (max-width: 555px) {
+@media only screen and (max-width: 850px) {
     .newCard {
         flex-direction: column;
         width: 90%;
@@ -242,9 +268,12 @@
 
     .rightSecImage {
         position: relative;
-        margin-left: 0rem;
         width: 100%;
         margin-top: -2rem;
+    }
+
+    .evenCard .rightSecImage {
+        margin-left: 0rem;
     }
 
     /* Define classes for each color from cardColors array */
