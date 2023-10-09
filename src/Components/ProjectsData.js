@@ -1,7 +1,7 @@
 const projectsData = [
   {
     name: "Sparkle Drive",
-    date: "Aug. 2023",
+    date: "2 Weeks",
     appType: "Web App",
     teamOrSoloProject: "Solo Project",
     discription:
@@ -14,7 +14,7 @@ const projectsData = [
   },
   {
     name: "MyFlex",
-    date: "June 2020 – July 2020",
+    date: "2 Months",
     appType: "Web App",
     teamOrSoloProject: "Team Project",
     discription:
@@ -27,7 +27,7 @@ const projectsData = [
   },
   {
     name: "Heart Disease Prediction",
-    date: "Oct. 2022 – Dec. 2022",
+    date: "1 Month",
     appType: "Machine Learning",
     teamOrSoloProject: "Team Project",
     discription:
@@ -40,7 +40,7 @@ const projectsData = [
   },
   {
     name: "Quotes",
-    date: "July 2021 – Sept. 2021",
+    date: "1 Month",
     appType: "Mobile App",
     teamOrSoloProject: "Solo Project",
     discription:
@@ -56,7 +56,7 @@ const projectsData = [
   },
   {
     name: "FadfadA",
-    date: "Aug. 2020 – Feb. 2021",
+    date: "1 Month",
     appType: "Web App",
     teamOrSoloProject: "Solo Project",
     discription:
@@ -69,7 +69,7 @@ const projectsData = [
   },
   {
     name: "Burger Builder",
-    date: "Apr. 2020 – May 2020",
+    date: "1 Month",
     appType: "Web App",
     teamOrSoloProject: "Udemy Course",
     discription:
