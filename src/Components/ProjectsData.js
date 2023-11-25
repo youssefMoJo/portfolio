@@ -1,16 +1,29 @@
 const projectsData = [
   {
-    name: "Sparkle Drive",
+    name: "GoScreen AI",
     date: "2 Weeks",
     appType: "Web App",
     teamOrSoloProject: "Solo Project",
     discription:
-      "Developed and launched the website with dynamic pricing, SMS order management, and user-friendly features, enhancing the customer experience and revenue potential.",
-    link: "https://sparkledrive.shop/",
-    github: "https://github.com/youssefMoJo/carWash",
-    Technologies: ["React", "Firebase (Realtime DB, Hosting)"],
+      "Crafted a dynamic web application that leverages ChatGPT to provide personalized movie recommendations. Share your preferences and discover curated suggestions in an engaging interface with all the details you need.",
+    link: "https://goscreen-ai.web.app/",
+    github: "https://github.com/youssefMoJo/GoScreen-AI",
+    Technologies: ["React", "Firebase", "ChatGPT"],
     specialStyling: false,
-    imageName: "NsparkleDrive.png",
+    imageName: "GoScreen-AI.png",
+  },
+  {
+    name: "Shorten URL",
+    date: "2 Days",
+    appType: "Chrome Extension",
+    teamOrSoloProject: "Solo Project",
+    discription:
+      "Created and launched a Chrome extension for efficient web link sharing, with future feature updates planned. Successfully published the extension on the Chrome Web Store, expanding its accessibility.",
+    link: "https://chromewebstore.google.com/detail/shorten-url/pkdhbhbeapnenbeihmabpgmeeinbdpgc",
+    github: "https://github.com/youssefMoJo/Shorten-URL",
+    Technologies: ["AWS (DynamoDB, API Gateway, Lambda)", "JavaScript"],
+    specialStyling: false,
+    imageName: "Group 28.png",
   },
   {
     name: "MyFlex",
@@ -24,6 +37,19 @@ const projectsData = [
     Technologies: ["React", "Node", "MongoDB"],
     specialStyling: false,
     imageName: "NMyflex.png",
+  },
+  {
+    name: "Sparkle Drive",
+    date: "2 Weeks",
+    appType: "Web App",
+    teamOrSoloProject: "Solo Project",
+    discription:
+      "Developed and launched the website with dynamic pricing, SMS order management, and user-friendly features, enhancing the customer experience and revenue potential.",
+    link: "https://sparkledrive.shop/",
+    github: "https://github.com/youssefMoJo/carWash",
+    Technologies: ["React", "Firebase (Realtime DB, Hosting)"],
+    specialStyling: false,
+    imageName: "NsparkleDrive.png",
   },
   {
     name: "Heart Disease Prediction",
