@@ -5,13 +5,15 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Fly from "./Components/Fly";
 import Rights from "./Components/Rights";
+import NewHome from "./Components/NewHome";
 import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <Home />
+      <NewHome />
+      {/* <Home /> */}
       <Fly />
       <Projects />
       <About />
