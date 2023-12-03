@@ -117,7 +117,7 @@ const NewHomeLeftSide = () => {
   };
 
   const githubIconStyle = {
-    animation: showLinkedinAndGithubIcons ? "scaleIn 1s ease" : "",
+    animation: showLinkedinAndGithubIcons ? "scaleIn 1.3s ease" : "",
     opacity: showLinkedinAndGithubIcons ? 1 : 0,
   };
 
