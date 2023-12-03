@@ -8,11 +8,14 @@ const NewHomeLeftSide = () => {
   const rocketAnimationRef = useRef();
   const linkedinAnimationRef = useRef();
   const [showRocket, setShowRocket] = useState(false);
+  const [showLinkedinAndGithubIcons, setShowLinkedinAndGithubIcons] =
+    useState(false);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowRocket(true);
       handleAnimationEnd();
+      setShowLinkedinAndGithubIcons(true);
     }, 1300);
 
     return () => clearTimeout(timeoutId);
@@ -109,6 +112,13 @@ const NewHomeLeftSide = () => {
     width: "5rem",
     position: "absolute",
     zIndex: "100",
+    animation: showLinkedinAndGithubIcons ? "scaleIn 1s ease" : "",
+    opacity: showLinkedinAndGithubIcons ? 1 : 0,
+  };
+
+  const githubIconStyle = {
+    animation: showLinkedinAndGithubIcons ? "scaleIn 1s ease" : "",
+    opacity: showLinkedinAndGithubIcons ? 1 : 0,
   };
 
   return (
@@ -209,6 +219,7 @@ const NewHomeLeftSide = () => {
           href={"https://github.com/youssefMoJo"}
         >
           <img
+            style={githubIconStyle}
             className="gitHubButtonInHomeImgForNewHome"
             src={require("../../Assets/github.png")}
             alt={"gitHub"}
