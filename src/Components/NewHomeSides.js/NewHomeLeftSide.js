@@ -17,6 +17,7 @@ const NewHomeLeftSide = () => {
   }, []);
 
   const handleAnimationEnd = () => {
+    handleColorChange();
     setTimeout(() => {
       setShowRocket(false);
     }, 3000);
@@ -46,10 +47,11 @@ const NewHomeLeftSide = () => {
     backgroundColor: "#101424",
     fontSize: "2.5rem",
     letterSpacing: "20px",
-    color: "#00FF57",
+    color: "white",
     opacity: 0,
     animation: "fadeInAndScale 1s ease forwards",
     animationDelay: "0.9s",
+    transition: "color 0.1s ease",
   };
 
   const rocketAnimationStyle = {
@@ -59,6 +61,18 @@ const NewHomeLeftSide = () => {
     animation: showRocket
       ? "moveRight 2.5s ease forwards, scaleToZero 5s ease forwards"
       : "none",
+  };
+
+  const handleColorChange = () => {
+    const nameContainer = document.getElementById("name-container");
+    if (nameContainer) {
+      const characters = nameContainer.getElementsByClassName("name-char");
+      for (let i = 0; i < characters.length; i++) {
+        setTimeout(() => {
+          characters[i].style.color = "#00FF57"; // Set the color to white
+        }, i * 100); // Adjust the delay as needed
+      }
+    }
   };
 
   return (
@@ -80,7 +94,6 @@ const NewHomeLeftSide = () => {
             0% {
               height: 0;
             }
-           
             100% {
               height: 20rem;
             }
@@ -91,7 +104,6 @@ const NewHomeLeftSide = () => {
               transform: translateX(-100%);
               opacity: 0;
             }
-
             100% {
               transform: translateX(0);
               opacity: 1;
@@ -102,7 +114,6 @@ const NewHomeLeftSide = () => {
             0% {
               transform: scaleX(0);
             }
-
             100% {
               transform: scaleX(1);
             }
@@ -112,7 +123,6 @@ const NewHomeLeftSide = () => {
             0% {
               transform: scaleY(0);
             }
-
             100% {
               transform: scaleY(1);
             }
@@ -123,7 +133,7 @@ const NewHomeLeftSide = () => {
               left: 20%;
             }
             100% {
-              left: calc(90% ); // Adjust the distance the rocket should move
+              left: calc(90%);
             }
           }
 
@@ -135,12 +145,39 @@ const NewHomeLeftSide = () => {
               transform: scaleX(0) scaleY(0);
             }
           }
-          
         `}
       </style>
 
       <div style={yAndMStyle}>
-        <div style={nameStyle}>YOUSSEF MOHAMED</div>
+        {/* <div style={nameStyle}>YOUSSEF MOHAMED</div> */}
+
+        <div
+          id="name-container"
+          style={{ ...nameStyle, animation: "fadeInAndScale 1s ease forwards" }}
+        >
+          {[
+            "Y",
+            "O",
+            "U",
+            "S",
+            "S",
+            "E",
+            "F",
+            " ",
+            "M",
+            "O",
+            "H",
+            "A",
+            "M",
+            "E",
+            "D",
+          ].map((char, index) => (
+            <span key={index} className="name-char">
+              {char}
+            </span>
+          ))}
+        </div>
+
         <div style={rocketAnimationStyle}>
           {showRocket && (
             <Lottie
