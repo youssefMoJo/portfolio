@@ -23,12 +23,27 @@ const NewHomeLeftSide = () => {
     backgroundColor: "#101424",
     fontSize: "2.5rem",
     letterSpacing: "20px",
+    color: "#00FF57",
+    opacity: 0,
+    animation: "fadeInAndScale 1s ease forwards",
+    animationDelay: "0.9s",
   };
 
   return (
     <div>
       <style>
         {`
+          @keyframes fadeInAndScale {
+            0% {
+              opacity: 0;
+              transform: translate(-52%, -50%) scale(0.8);
+            }
+            100% {
+              opacity: 1;
+              transform: translate(-52%, -50%) scale(1);
+            }
+          }
+
           @keyframes expand {
             0% {
               height: 0;
