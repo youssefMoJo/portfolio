@@ -78,6 +78,17 @@ const NewHomeLeftSide = () => {
     }
   };
 
+  const softwareDeveloperStyle = {
+    fontFamily: "Playfair Display",
+    position: "absolute",
+    top: "89%",
+    left: "49%",
+    fontSize: "2rem",
+    color: "#00D0FF",
+    width: "max-content",
+    letterSpacing: "3px",
+  };
+
   return (
     <div>
       <style>
@@ -216,6 +227,7 @@ const NewHomeLeftSide = () => {
         >
           M
         </span>
+        <div style={softwareDeveloperStyle}>Software Developer</div>
       </div>
     </div>
   );
