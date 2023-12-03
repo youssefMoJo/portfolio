@@ -176,6 +176,15 @@ const NewHomeLeftSide = () => {
         `}
       </style>
 
+      <a
+        className="smallCirleLinkedinSignForHome"
+        href="https://www.linkedin.com/in/youssef-mohamed-812b4b18a/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        in
+      </a>
+
       <div style={yAndMStyle}>
         <div
           id="name-container"
