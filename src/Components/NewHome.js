@@ -1,4 +1,8 @@
+import React, { useRef } from "react";
+
 import NewHomeLeftSide from "./NewHomeSides.js/NewHomeLeftSide";
+
+import NewHomeRightSide from "./NewHomeSides.js/NewHomeRightSide";
 
 const NewHome = () => {
   const newHomeContainer = {
@@ -8,11 +12,13 @@ const NewHome = () => {
     alignItems: "center",
     justifyContent: "center",
     marginBottom: "4rem",
+    gap: "8rem",
   };
 
   return (
     <div style={newHomeContainer}>
       <NewHomeLeftSide />
+      <NewHomeRightSide />
     </div>
   );
 };

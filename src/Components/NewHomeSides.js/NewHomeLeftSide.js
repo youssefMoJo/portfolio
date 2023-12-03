@@ -27,6 +27,8 @@ const NewHomeLeftSide = () => {
     display: "flex",
     alignItems: "center",
     gap: "3rem",
+    position: "relative",
+    // backgroundColor: "blue",
   };
 
   const yAndMSplitterStyle = {
@@ -46,12 +48,13 @@ const NewHomeLeftSide = () => {
     textAlign: "center",
     backgroundColor: "#101424",
     fontSize: "2.5rem",
-    letterSpacing: "20px",
+    letterSpacing: "25px",
     color: "white",
     opacity: 0,
     animation: "fadeInAndScale 1s ease forwards",
     animationDelay: "0.9s",
     transition: "color 0.1s ease",
+    width: "150%",
   };
 
   const rocketAnimationStyle = {
@@ -149,8 +152,6 @@ const NewHomeLeftSide = () => {
       </style>
 
       <div style={yAndMStyle}>
-        {/* <div style={nameStyle}>YOUSSEF MOHAMED</div> */}
-
         <div
           id="name-container"
           style={{ ...nameStyle, animation: "fadeInAndScale 1s ease forwards" }}
@@ -172,7 +173,11 @@ const NewHomeLeftSide = () => {
             "E",
             "D",
           ].map((char, index) => (
-            <span key={index} className="name-char">
+            <span
+              style={{ fontFamily: "Playfair Display" }}
+              key={index}
+              className="name-char"
+            >
               {char}
             </span>
           ))}
