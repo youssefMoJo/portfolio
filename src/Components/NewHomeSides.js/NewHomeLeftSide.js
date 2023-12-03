@@ -1,4 +1,27 @@
+import React, { useRef, useEffect, useState } from "react";
+
+import Lottie from "lottie-react";
+import rocketAnimation from "../../Assets/animation/rocket.json";
+
 const NewHomeLeftSide = () => {
+  const rocketAnimationRef = useRef();
+  const [showRocket, setShowRocket] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowRocket(true);
+      handleAnimationEnd();
+    }, 1300);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  const handleAnimationEnd = () => {
+    setTimeout(() => {
+      setShowRocket(false);
+    }, 3000);
+  };
+
   const yAndMStyle = {
     display: "flex",
     alignItems: "center",
@@ -27,6 +50,15 @@ const NewHomeLeftSide = () => {
     opacity: 0,
     animation: "fadeInAndScale 1s ease forwards",
     animationDelay: "0.9s",
+  };
+
+  const rocketAnimationStyle = {
+    rotate: "45deg",
+    position: "absolute",
+    width: "7rem",
+    animation: showRocket
+      ? "moveRight 2.5s ease forwards, scaleToZero 5s ease forwards"
+      : "none",
   };
 
   return (
@@ -85,12 +117,39 @@ const NewHomeLeftSide = () => {
               transform: scaleY(1);
             }
           }
+
+          @keyframes moveRight {
+            0% {
+              left: 20%;
+            }
+            100% {
+              left: calc(90% ); // Adjust the distance the rocket should move
+            }
+          }
+
+          @keyframes scaleToZero {
+            0% {
+              transform: scaleX(1) scaleY(1);
+            }
+            100% {
+              transform: scaleX(0) scaleY(0);
+            }
+          }
           
         `}
       </style>
 
       <div style={yAndMStyle}>
         <div style={nameStyle}>YOUSSEF MOHAMED</div>
+        <div style={rocketAnimationStyle}>
+          {showRocket && (
+            <Lottie
+              lottieRef={rocketAnimationRef}
+              loop={true}
+              animationData={rocketAnimation}
+            />
+          )}
+        </div>
 
         <span
           style={{
