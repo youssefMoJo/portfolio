@@ -1,7 +1,5 @@
 const NewHomeLeftSide = () => {
   const yAndMStyle = {
-    fontSize: "18rem",
-    fontFamily: "Playfair Display",
     display: "flex",
     alignItems: "center",
     gap: "3rem",
@@ -13,6 +11,18 @@ const NewHomeLeftSide = () => {
     borderRadius: "4px",
     animation:
       "expand 0.6s ease, appearFromLeft 1s ease, scaleIn 1s ease, scaleUpY 0.6s ease",
+  };
+
+  const nameStyle = {
+    fontFamily: "Playfair Display",
+    position: "absolute",
+    top: "50%",
+    left: "52%",
+    transform: "translate(-52%, -50%)",
+    textAlign: "center",
+    backgroundColor: "#101424",
+    fontSize: "2.5rem",
+    letterSpacing: "20px",
   };
 
   return (
@@ -63,12 +73,16 @@ const NewHomeLeftSide = () => {
           
         `}
       </style>
+
       <div style={yAndMStyle}>
+        <div style={nameStyle}>YOUSSEF MOHAMED</div>
+
         <span
           style={{
             fontFamily: "Playfair Display",
             animation: "scaleUpY 0.6s ease",
             display: "inline-block",
+            fontSize: "18rem",
           }}
         >
           Y
@@ -81,6 +95,7 @@ const NewHomeLeftSide = () => {
             display: "inline-block",
             fontFamily: "Playfair Display",
             transformOrigin: "left center",
+            fontSize: "18rem",
           }}
         >
           M
