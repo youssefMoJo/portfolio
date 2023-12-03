@@ -1,3 +1,5 @@
+import NewHomeLeftSide from "./NewHomeSides.js/NewHomeLeftSide";
+
 const NewHome = () => {
   const newHomeContainer = {
     height: "100vh",
@@ -7,7 +9,12 @@ const NewHome = () => {
     justifyContent: "center",
     marginBottom: "4rem",
   };
-  return <div style={newHomeContainer}>new home</div>;
+
+  return (
+    <div style={newHomeContainer}>
+      <NewHomeLeftSide />
+    </div>
+  );
 };
 
 export default NewHome;
