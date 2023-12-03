@@ -51,7 +51,7 @@ const NewHomeLeftSide = () => {
     letterSpacing: "25px",
     color: "white",
     opacity: 0,
-    animation: "fadeInAndScale 1s ease forwards",
+    animation: "fadeInAndScale 1.5s ease forwards",
     animationDelay: "0.9s",
     transition: "color 0.1s ease",
     width: "150%",
@@ -62,7 +62,7 @@ const NewHomeLeftSide = () => {
     position: "absolute",
     width: "7rem",
     animation: showRocket
-      ? "moveRight 2.5s ease forwards, scaleToZero 5s ease forwards"
+      ? "moveRight 3s ease forwards, scaleToZero 5s ease forwards"
       : "none",
   };
 
@@ -133,10 +133,10 @@ const NewHomeLeftSide = () => {
 
           @keyframes moveRight {
             0% {
-              left: 20%;
+              left: 0%;
             }
             100% {
-              left: calc(90%);
+              left: calc(100%);
             }
           }
 
