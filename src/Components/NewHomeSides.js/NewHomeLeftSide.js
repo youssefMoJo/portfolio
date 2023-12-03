@@ -2,9 +2,11 @@ import React, { useRef, useEffect, useState } from "react";
 
 import Lottie from "lottie-react";
 import rocketAnimation from "../../Assets/animation/rocket.json";
+import linkedinAnimation from "../../Assets/animation/linkedin.json";
 
 const NewHomeLeftSide = () => {
   const rocketAnimationRef = useRef();
+  const linkedinAnimationRef = useRef();
   const [showRocket, setShowRocket] = useState(false);
 
   useEffect(() => {
@@ -103,6 +105,12 @@ const NewHomeLeftSide = () => {
     letterSpacing: "3px",
   };
 
+  const linkedinAnimationStyle = {
+    width: "5rem",
+    position: "absolute",
+    zIndex: "100",
+  };
+
   return (
     <div>
       <style>
@@ -176,14 +184,37 @@ const NewHomeLeftSide = () => {
         `}
       </style>
 
-      <a
-        className="smallCirleLinkedinSignForHome"
-        href="https://www.linkedin.com/in/youssef-mohamed-812b4b18a/"
-        rel="noreferrer"
-        target="_blank"
-      >
-        in
-      </a>
+      <div style={{ display: "flex", gap: "2rem" }}>
+        {/* linkedin */}
+        <a
+          style={linkedinAnimationStyle}
+          href="https://www.linkedin.com/in/youssef-mohamed-812b4b18a/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <Lottie
+            lottieRef={linkedinAnimationRef}
+            loop={false}
+            animationData={linkedinAnimation}
+            // onComplete={() => {
+            //   linkedinAnimationRef.current.goToAndPlay(14, true);
+            // }}
+          />
+        </a>
+
+        {/* github */}
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href={"https://github.com/youssefMoJo"}
+        >
+          <img
+            className="gitHubButtonInHomeImgForNewHome"
+            src={require("../../Assets/github.png")}
+            alt={"gitHub"}
+          />
+        </a>
+      </div>
 
       <div style={yAndMStyle}>
         <div
