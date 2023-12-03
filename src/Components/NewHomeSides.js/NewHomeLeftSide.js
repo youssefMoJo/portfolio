@@ -76,6 +76,20 @@ const NewHomeLeftSide = () => {
         }, i * 100); // Adjust the delay as needed
       }
     }
+
+    const softwareDeveloperContainer = document.getElementById(
+      "software-developer-container"
+    );
+    if (softwareDeveloperContainer) {
+      const characters = softwareDeveloperContainer.getElementsByClassName(
+        "software-developer-char"
+      );
+      for (let i = 0; i < characters.length; i++) {
+        setTimeout(() => {
+          characters[i].style.opacity = 1; // Show the character
+        }, i * 100); // Adjust the delay as needed
+      }
+    }
   };
 
   const softwareDeveloperStyle = {
@@ -227,7 +241,36 @@ const NewHomeLeftSide = () => {
         >
           M
         </span>
-        <div style={softwareDeveloperStyle}>Software Developer</div>
+        <div id="software-developer-container" style={softwareDeveloperStyle}>
+          {[
+            "S",
+            "o",
+            "f",
+            "t",
+            "w",
+            "a",
+            "r",
+            "e",
+            " ",
+            "D",
+            "e",
+            "v",
+            "e",
+            "l",
+            "o",
+            "p",
+            "e",
+            "r",
+          ].map((char, index) => (
+            <span
+              style={{ fontFamily: "Playfair Display", opacity: 0 }}
+              key={index}
+              className="software-developer-char"
+            >
+              {char}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
