@@ -9,7 +9,7 @@ const NewHomeLeftSide = () => {
 
   const yAndMSplitterStyle = {
     height: "20rem",
-    borderRight: "13px solid white",
+    borderRight: "8px solid white",
     borderRadius: "4px",
     animation:
       "expand 0.6s ease, appearFromLeft 1s ease, scaleIn 1s ease, scaleUpY 0.6s ease",
