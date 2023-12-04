@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
-
 import NewHomeLeftSide from "./NewHomeSides.js/NewHomeLeftSide";
-
 import NewHomeRightSide from "./NewHomeSides.js/NewHomeRightSide";
 
 const NewHome = () => {

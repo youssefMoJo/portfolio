@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import Lottie from "lottie-react";
 import codingAnimation from "../../Assets/animation/coding.json";
+import { BiDownload } from "react-icons/bi";
+import MyResume from "../../Files/resume.pdf";
 
 const NewHomeRightSide = () => {
   const codingAnimationRef = useRef();
@@ -12,6 +14,13 @@ const NewHomeRightSide = () => {
   useEffect(() => {
     codingAnimationRef.current.play(); // Start the animation
   }, []);
+
+  const containerStyle = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    marginTop: "1rem", // Adjust the margin as needed
+  };
 
   return (
     <div style={codingAnimationStyle}>
@@ -27,11 +36,21 @@ const NewHomeRightSide = () => {
           }
         `}
       </style>
-      <Lottie
-        lottieRef={codingAnimationRef}
-        loop={true}
-        animationData={codingAnimation}
-      />
+      <div style={containerStyle}>
+        <Lottie
+          lottieRef={codingAnimationRef}
+          loop={true}
+          animationData={codingAnimation}
+        />
+        <div className="ResumeButtonContainer">
+          <a className="ResumeButton" href={MyResume}>
+            Download Resume
+          </a>
+          <a href={MyResume}>
+            <BiDownload className="DownloadIcon" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
