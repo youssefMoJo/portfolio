@@ -16,7 +16,7 @@ const NewHome = () => {
   };
 
   return (
-    <div style={newHomeContainer}>
+    <div id="home" style={newHomeContainer}>
       <NewHomeLeftSide />
       <NewHomeRightSide />
     </div>
