@@ -194,8 +194,7 @@ const NewHomeLeftSide = () => {
         `}
       </style>
 
-      <div style={{ display: "flex", gap: "2rem" }}>
-        {/* linkedin */}
+      {/* <div style={{ display: "flex", gap: "2rem" }}>
         <a
           style={linkedinAnimationStyle}
           href="https://www.linkedin.com/in/youssef-mohamed-812b4b18a/"
@@ -206,13 +205,9 @@ const NewHomeLeftSide = () => {
             lottieRef={linkedinAnimationRef}
             loop={false}
             animationData={linkedinAnimation}
-            // onComplete={() => {
-            //   linkedinAnimationRef.current.goToAndPlay(14, true);
-            // }}
           />
         </a>
 
-        {/* github */}
         <a
           rel="noreferrer"
           target="_blank"
@@ -225,7 +220,7 @@ const NewHomeLeftSide = () => {
             alt={"gitHub"}
           />
         </a>
-      </div>
+      </div> */}
 
       <div style={yAndMStyle}>
         <div
