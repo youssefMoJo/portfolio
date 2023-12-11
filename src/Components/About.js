@@ -25,11 +25,10 @@ const About = () => {
           contributions to any endeavor.
         </p>
         <p className="AboutParagraph">
-          I am a strong believer in the importance of communication and
-          collaboration. I strive to be honest, respectful, kind, and reliable
-          in my interactions with others, and I always enjoy a good conversation
-          to learn about the experiences and perspectives of my peers. I also
-          value the importance of teamwork and having fun in the workplace.
+          I prioritize open communication, collaboration, and a positive
+          workplace environment. My interactions are guided by honesty, respect,
+          kindness, and reliability, as I value learning from the diverse
+          experiences of my peers.
         </p>
       </div>
     </div>
