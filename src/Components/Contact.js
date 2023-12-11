@@ -16,7 +16,7 @@ const Contact = () => {
         />
       </div>
       <div className="ContactBoxContainer">
-        <h1 className="ContactBoxTitle">Take A Coffee & Chat With Me</h1>
+        <h1 className="ContactBoxTitle">Grab a Coffee and Let's Chat!</h1>
         <div className="contactConnectContainer">
           <a
             className="contactEmailButton"
