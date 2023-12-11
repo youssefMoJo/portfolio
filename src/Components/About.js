@@ -16,12 +16,13 @@ const About = () => {
           <h1 className="AboutParagraphQuestion">/Who am i?</h1>
         </div>
         <p className="AboutParagraph">
-          I have a Bachelor's degree in Computer Science, which I completed in
-          December 2022. I have acquired a vast array of skills over the past 5
-          years through my studies in coding and development. My enthusiasm for
-          new challenges has driven me to complete multiple independent courses
-          and develop projects with a range of technologies. I am confident that
-          I have a great deal to offer.
+          I graduated with a Bachelor's degree in Computer Science in December
+          2022, and over the last five years of my academic journey, I have
+          cultivated a diverse set of skills in coding and development. My
+          eagerness to tackle new challenges has led me to successfully complete
+          various independent courses and undertake projects utilizing a wide
+          range of technologies. I am confident in my ability to bring valuable
+          contributions to any endeavor.
         </p>
         <p className="AboutParagraph">
           I am a strong believer in the importance of communication and
