@@ -330,7 +330,9 @@ const NewHomeLeftSide = () => {
         style={{
           display: "flex",
           alignItems: "center",
-          gap: "1rem",
+          gap: "0.5rem",
+          position: "absolute",
+          top: "80vh",
         }}
       >
         <div className="ResumeButtonContainer">
