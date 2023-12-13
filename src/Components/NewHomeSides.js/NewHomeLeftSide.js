@@ -52,7 +52,7 @@ const NewHomeLeftSide = () => {
     transform: "translate(-52%, -50%)",
     textAlign: "center",
     backgroundColor: "#101424",
-    fontSize: "2rem",
+    // fontSize: "2rem",
     letterSpacing: "25px",
     color: "white",
     opacity: 0,
@@ -125,6 +125,18 @@ const NewHomeLeftSide = () => {
     <div>
       <style>
         {`
+          @media (min-width: 1390px) {
+            .name-container-wrapper {
+              font-size: 2rem; 
+            }
+          }
+
+          @media (max-width: 1390px) {
+            .name-container-wrapper {
+              font-size: 1rem; 
+            }
+          }
+
           @keyframes fadeInAndScale {
             0% {
               opacity: 0;
@@ -225,6 +237,7 @@ const NewHomeLeftSide = () => {
       <div style={yAndMStyle}>
         <div
           id="name-container"
+          className="name-container-wrapper"
           style={{ ...nameStyle, animation: "fadeInAndScale 1s ease forwards" }}
         >
           {[
