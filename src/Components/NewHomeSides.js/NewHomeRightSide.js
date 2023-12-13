@@ -25,23 +25,22 @@ const NewHomeRightSide = () => {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginTop: "1rem",
   };
 
-  const linkedinAnimationStyle = {
-    width: "4rem",
-    // position: "absolute",
-    zIndex: "100",
-    animation: showLinkedinAndGithubIcons ? "scaleIn 1s ease" : "",
-    opacity: showLinkedinAndGithubIcons ? 1 : 0,
-    marginBottom: "-1rem",
-  };
+  // const linkedinAnimationStyle = {
+  //   width: "4rem",
+  //   // position: "absolute",
+  //   zIndex: "100",
+  //   animation: showLinkedinAndGithubIcons ? "scaleIn 1s ease" : "",
+  //   opacity: showLinkedinAndGithubIcons ? 1 : 0,
+  //   marginBottom: "-1rem",
+  // };
 
-  const githubIconStyle = {
-    animation: showLinkedinAndGithubIcons ? "scaleIn 1.3s ease" : "",
-    opacity: showLinkedinAndGithubIcons ? 1 : 0,
-    marginBottom: "-1rem",
-  };
+  // const githubIconStyle = {
+  //   animation: showLinkedinAndGithubIcons ? "scaleIn 1.3s ease" : "",
+  //   opacity: showLinkedinAndGithubIcons ? 1 : 0,
+  //   marginBottom: "-1rem",
+  // };
 
   return (
     <div style={codingAnimationStyle}>
@@ -63,7 +62,7 @@ const NewHomeRightSide = () => {
           loop={true}
           animationData={codingAnimation}
         />
-        <div
+        {/* <div
           style={{
             display: "flex",
             alignItems: "center",
@@ -103,7 +102,7 @@ const NewHomeRightSide = () => {
               alt={"gitHub"}
             />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

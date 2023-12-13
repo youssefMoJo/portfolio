@@ -3,6 +3,8 @@ import React, { useRef, useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import rocketAnimation from "../../Assets/animation/rocket.json";
 import linkedinAnimation from "../../Assets/animation/linkedin.json";
+import { BiDownload } from "react-icons/bi";
+import MyResume from "../../Files/resume.pdf";
 
 const NewHomeLeftSide = () => {
   const rocketAnimationRef = useRef();
@@ -109,16 +111,17 @@ const NewHomeLeftSide = () => {
   };
 
   const linkedinAnimationStyle = {
-    width: "5rem",
-    position: "absolute",
+    width: "4rem",
     zIndex: "100",
     animation: showLinkedinAndGithubIcons ? "scaleIn 1s ease" : "",
     opacity: showLinkedinAndGithubIcons ? 1 : 0,
+    marginBottom: "-1rem",
   };
 
   const githubIconStyle = {
     animation: showLinkedinAndGithubIcons ? "scaleIn 1.3s ease" : "",
     opacity: showLinkedinAndGithubIcons ? 1 : 0,
+    marginBottom: "-1rem",
   };
 
   return (
@@ -224,34 +227,6 @@ const NewHomeLeftSide = () => {
         `}
       </style>
 
-      {/* <div style={{ display: "flex", gap: "2rem" }}>
-        <a
-          style={linkedinAnimationStyle}
-          href="https://www.linkedin.com/in/youssef-mohamed-812b4b18a/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <Lottie
-            lottieRef={linkedinAnimationRef}
-            loop={false}
-            animationData={linkedinAnimation}
-          />
-        </a>
-
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href={"https://github.com/youssefMoJo"}
-        >
-          <img
-            style={githubIconStyle}
-            className="gitHubButtonInHomeImgForNewHome"
-            src={require("../../Assets/github.png")}
-            alt={"gitHub"}
-          />
-        </a>
-      </div> */}
-
       <div className="leftSection-container" style={yAndMStyle}>
         <div
           id="name-container"
@@ -350,6 +325,47 @@ const NewHomeLeftSide = () => {
             </span>
           ))}
         </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "1rem",
+        }}
+      >
+        <div className="ResumeButtonContainer">
+          <a className="ResumeButton" href={MyResume}>
+            Download Resume
+          </a>
+          <a href={MyResume}>
+            <BiDownload className="DownloadIcon" />
+          </a>
+        </div>
+        <a
+          style={linkedinAnimationStyle}
+          href="https://www.linkedin.com/in/youssef-mohamed-812b4b18a/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <Lottie
+            lottieRef={linkedinAnimationRef}
+            loop={false}
+            animationData={linkedinAnimation}
+          />
+        </a>
+
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href={"https://github.com/youssefMoJo"}
+        >
+          <img
+            style={githubIconStyle}
+            className="gitHubButtonInHomeImgForNewHome"
+            src={require("../../Assets/github.png")}
+            alt={"gitHub"}
+          />
+        </a>
       </div>
     </div>
   );
