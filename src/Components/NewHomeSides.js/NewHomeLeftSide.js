@@ -125,18 +125,7 @@ const NewHomeLeftSide = () => {
     <div>
       <style>
         {`
-          @media (min-width: 1390px) {
-            .name-container-wrapper {
-              font-size: 2rem; 
-            }
-          }
-
-          @media (max-width: 1390px) {
-            .name-container-wrapper {
-              font-size: 1rem; 
-            }
-          }
-
+        
           @keyframes fadeInAndScale {
             0% {
               opacity: 0;
@@ -203,6 +192,35 @@ const NewHomeLeftSide = () => {
               transform: scaleX(0) scaleY(0);
             }
           }
+
+          @media (min-width: 1390px) {
+            .name-container-wrapper {
+              font-size: 2rem; 
+            }
+
+            .Y-character  {
+              font-size: 18rem; 
+            }
+            .M-character {
+              font-size: 18rem; 
+            }
+          }
+
+          @media (max-width: 1390px) {
+            .name-container-wrapper {
+              font-size: 1rem; 
+            }
+            .Y-character  {
+              font-size: 13rem; 
+            }
+            .M-character {
+              font-size: 13rem; 
+            }
+            .leftSection-container {
+              margin-left: 2rem
+            }
+          }
+
         `}
       </style>
 
@@ -234,7 +252,7 @@ const NewHomeLeftSide = () => {
         </a>
       </div> */}
 
-      <div style={yAndMStyle}>
+      <div className="leftSection-container" style={yAndMStyle}>
         <div
           id="name-container"
           className="name-container-wrapper"
@@ -278,11 +296,12 @@ const NewHomeLeftSide = () => {
         </div>
 
         <span
+          className="Y-character"
           style={{
             fontFamily: "Playfair Display",
             animation: "scaleUpY 0.6s ease",
             display: "inline-block",
-            fontSize: "18rem",
+            // fontSize: "18rem",
           }}
         >
           Y
@@ -290,12 +309,13 @@ const NewHomeLeftSide = () => {
 
         <span style={yAndMSplitterStyle}></span>
         <span
+          className="M-character"
           style={{
             animation: "appearFromLeft 0.6s ease, scaleIn  0.6s ease",
             display: "inline-block",
             fontFamily: "Playfair Display",
             transformOrigin: "left center",
-            fontSize: "18rem",
+            // fontSize: "18rem",
           }}
         >
           M
