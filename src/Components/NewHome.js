@@ -14,7 +14,17 @@ const NewHome = () => {
   };
 
   return (
-    <div id="home" style={newHomeContainer}>
+    <div className="heroSec-container" id="home" style={newHomeContainer}>
+      {/* <style>
+        {`
+          @media (max-width: 1000px) {
+            .heroSec-container {
+              flex-direction: column;
+            }
+          }
+          
+          `}
+      </style> */}
       <NewHomeLeftSide />
       <NewHomeRightSide />
     </div>

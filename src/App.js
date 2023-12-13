@@ -28,8 +28,8 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      {/* {screenWidth >= 1490 ? <NewHome /> : <Home />} */}
-      <NewHome />
+      {screenWidth >= 1000 ? <NewHome /> : <Home />}
+      {/* <NewHome /> */}
       <Fly />
       <Projects />
       <About />
