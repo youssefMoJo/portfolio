@@ -297,6 +297,37 @@ const NewHomeLeftSide = () => {
         </span>
         <div id="software-developer-container" style={softwareDeveloperStyle}>
           {[
+            "F",
+            "u",
+            "l",
+            "l",
+            "-",
+            "S",
+            "t",
+            "a",
+            "c",
+            "k",
+            " ",
+            "W",
+            "e",
+            "b",
+            " ",
+            "D",
+            "e",
+            "v",
+          ].map((char, index) => (
+            <span
+              style={{ fontFamily: "Playfair Display", opacity: 0 }}
+              key={index}
+              className="software-developer-char"
+            >
+              {char}
+            </span>
+          ))}
+        </div>
+
+        {/* <div id="software-developer-container" style={softwareDeveloperStyle}>
+          {[
             "S",
             "o",
             "f",
@@ -324,7 +355,7 @@ const NewHomeLeftSide = () => {
               {char}
             </span>
           ))}
-        </div>
+        </div> */}
       </div>
       <div
         style={{
