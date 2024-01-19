@@ -16,19 +16,21 @@ const About = () => {
           <h1 className="AboutParagraphQuestion">/Who am i?</h1>
         </div>
         <p className="AboutParagraph">
-          I graduated with a Bachelor's degree in Computer Science in December
-          2022, and over the last five years of my academic journey, I have
-          cultivated a diverse set of skills in coding and development. My
-          eagerness to tackle new challenges has led me to successfully complete
-          various independent courses and undertake projects utilizing a wide
-          range of technologies. I am confident in my ability to bring valuable
-          contributions to any endeavor.
+          Hi, I'm Youssef—a dedicated full-stack web developer and enthusiastic
+          content creator. You'll often find me crafting engaging shorts on
+          Facebook and Instagram, driven by a passion for exploring the
+          intersection of technology and its potential to enhance our daily
+          lives. Whether I'm immersed in coding or sharing insights on the
+          profound impact of technology, I thrive on deepening my understanding
+          and cultivating knowledge in every endeavor.
         </p>
         <p className="AboutParagraph">
-          I prioritize open communication, collaboration, and a positive
-          workplace environment. My interactions are guided by honesty, respect,
-          kindness, and reliability, as I value learning from the diverse
-          experiences of my peers.
+          As a Train-the-Trainer Facilitator with techKNOWtutors at CSCNL since
+          January 2024, I actively create curriculum and conduct workshops,
+          empowering individuals with crucial digital skills in Newfoundland.
+          Additionally, I collaborate with nonprofits and volunteers to secure
+          the sustainability of digital skills initiatives, extending the impact
+          far beyond the scope of techKNOWtutors.
         </p>
       </div>
     </div>
