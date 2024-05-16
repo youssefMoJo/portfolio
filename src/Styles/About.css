@@ -39,22 +39,22 @@
 }
 
 .AboutParagraph {
-    font-size: 2.5rem;
-    font-family: 'Iceland', cursive;
+    font-size: 1.6rem;
+    /* font-family: 'Iceland', cursive; */
     padding-bottom: 2rem;
     text-align: justify;
 }
 
 @media only screen and (max-width: 980px){
     .AboutParagraph {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
 
 @media only screen and (max-width: 650px) {
 
     .AboutParagraph {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         width: 115%;
     }
 
