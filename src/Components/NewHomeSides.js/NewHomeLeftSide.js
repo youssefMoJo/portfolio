@@ -308,13 +308,15 @@ const NewHomeLeftSide = () => {
             "c",
             "k",
             " ",
-            "W",
-            "e",
-            "b",
-            " ",
             "D",
             "e",
             "v",
+            "e",
+            "l",
+            "o",
+            "p",
+            "e",
+            "r",
           ].map((char, index) => (
             <span
               style={{ fontFamily: "Playfair Display", opacity: 0 }}

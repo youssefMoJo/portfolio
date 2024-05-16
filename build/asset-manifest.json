@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd39042f.css",
-    "main.js": "/static/js/main.6563c8e6.js",
+    "main.css": "/static/css/main.ba98d7ef.css",
+    "main.js": "/static/js/main.8b26056d.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Myflex.png": "/static/media/Myflex.b1d697f7aa85f63ecd6d.png",
     "static/media/sparkleDrive.png": "/static/media/sparkleDrive.2380acc0416119d41e7b.png",
@@ -10,7 +10,7 @@
     "static/media/HiChar.png": "/static/media/HiChar.cf238877c5cb5f11d592.png",
     "static/media/sitting and reading trans.png": "/static/media/sitting and reading trans.4e449da09bcac7ac59d1.png",
     "static/media/NMyflex.png": "/static/media/NMyflex.4a763169482b5431e7bd.png",
-    "static/media/resume.pdf": "/static/media/resume.7756c63b63dbe06b24b0.pdf",
+    "static/media/resume.pdf": "/static/media/resume.6e31028064f499141f69.pdf",
     "static/media/NsparkleDrive.png": "/static/media/NsparkleDrive.e89474d136d35fe1cc83.png",
     "static/media/HeartDiseasePrediction.jpg": "/static/media/HeartDiseasePrediction.449c74d8d5c73b7979b4.jpg",
     "static/media/waitingToFly.png": "/static/media/waitingToFly.dbca1d3bf5cf9e373608.png",
@@ -36,12 +36,12 @@
     "static/media/linkedin.png": "/static/media/linkedin.712c4ce3d6be06644d11.png",
     "static/media/Logo.png": "/static/media/Logo.abb6264edcceb6790cbd.png",
     "index.html": "/index.html",
-    "main.cd39042f.css.map": "/static/css/main.cd39042f.css.map",
-    "main.6563c8e6.js.map": "/static/js/main.6563c8e6.js.map",
+    "main.ba98d7ef.css.map": "/static/css/main.ba98d7ef.css.map",
+    "main.8b26056d.js.map": "/static/js/main.8b26056d.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd39042f.css",
-    "static/js/main.6563c8e6.js"
+    "static/css/main.ba98d7ef.css",
+    "static/js/main.8b26056d.js"
   ]
 }
