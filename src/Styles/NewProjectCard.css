@@ -1,300 +1,306 @@
-@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceland&family=Kaisei+Decol:wght@400;500;700&display=swap");
 
 .newCard {
-    position: relative;
-    width: 84%;
-    display: flex;
-    transition: background 20s linear;
-    overflow: hidden;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 20px 1px rgba(65, 132, 234, 0.75);
+  position: relative;
+  width: 84%;
+  display: flex;
+  transition: background 20s linear;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 20px 1px rgba(65, 132, 234, 0.75);
 }
 
 .newCard:hover {
-    background: linear-gradient(259.16deg, #02102c -0.49%, rgb(9, 23, 51));
+  background: linear-gradient(259.16deg, #02102c -0.49%, rgb(9, 23, 51));
 }
 
 .evenCard {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .oddCard {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 /* Define classes for each color from cardColors array */
 .color-1 {
-    background: linear-gradient(259.16deg, #5fd77e, black);
+  background: linear-gradient(259.16deg, #5fd77e, black);
 }
 
 .color-2 {
-    background: linear-gradient(259.16deg, black, #1277fa);
+  background: linear-gradient(259.16deg, black, #1277fa);
 }
 
 .color-3 {
-    background: linear-gradient(259.16deg, #f55e45, black);
+  background: linear-gradient(259.16deg, #f55e45, black);
 }
 
 .color-4 {
-    background: linear-gradient(259.16deg, black, #6e46a6);
+  background: linear-gradient(259.16deg, black, #6e46a6);
 }
 
 .color-5 {
-    background: linear-gradient(259.16deg, #a91d34, black);
+  background: linear-gradient(259.16deg, #a91d34, black);
 }
 
 .redGlow {
-    position: absolute;
-    background-color: #712d4a;
-    width: 300px;
-    height: 300px;
-    filter: blur(100px);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    margin-left: -4rem;
+  position: absolute;
+  background-color: #712d4a;
+  width: 300px;
+  height: 300px;
+  filter: blur(100px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  margin-left: -4rem;
 }
 
 .newCard:hover .redGlow {
-    opacity: 1;
+  opacity: 1;
 }
 
 .newCard div:nth-child(1) {
-    flex: 1.7;
+  flex: 1.7;
 }
 
 .newCard div:nth-child(2) {
-    flex: 2;
+  flex: 2;
 }
 
 .leftSec {
-    margin: 40px;
-    z-index: 1;
+  margin: 40px;
+  z-index: 1;
 }
 
-.rightSec {}
+.rightSec {
+}
 
 .rightSecImage {
-    position: absolute;
-    /* margin-left: 5rem; */
-    transition: transform 0.3s ease-in-out;
+  position: absolute;
+  /* margin-left: 5rem; */
+  transition: transform 0.3s ease-in-out;
 }
 
 .evenCard .rightSecImage {
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
 
 .evenCard:hover .rightSecImage {
-    transform: translateY(10px) translateX(-10px);
+  transform: translateY(10px) translateX(-10px);
 }
 
 .oddCard:hover .rightSecImage {
-    transform: translateY(10px) translateX(10px);
+  transform: translateY(10px) translateX(10px);
 }
 
 .cardTitle {
-    font-family: 'Iceland', cursive;
-    font-family: 'Kaisei Decol', serif;
-    font-size: 2.4rem;
-    margin-bottom: 0.4rem;
+  font-family: "Iceland", cursive;
+  font-family: "Kaisei Decol", serif;
+  font-size: 2.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .projectLabelsContainer {
-    display: flex;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .project-duration,
 .cardAppType,
 .cardTeamOrSoloProject,
 .newCardGitHubButton {
-    padding: 4px 15px;
-    margin-right: 10px;
-    margin-bottom: 7px;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
+  padding: 4px 15px;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
 }
 
 .project-duration {
-    background-color: #3498db;
+  background-color: #3498db;
 }
 
 .cardAppType {
-    background-color: #bf3f31;
+  background-color: #bf3f31;
 }
 
 .cardTeamOrSoloProject {
-    background-color: rgb(23, 109, 59)
+  background-color: rgb(23, 109, 59);
 }
 
 .cardDescription {
-    font-size: 1.1rem;
-    font-family: 'Kaisei Decol', serif;
-    margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-family: "Kaisei Decol", serif;
+  margin-bottom: 2rem;
 }
 
 .cardTechnologiesContainer {
-    display: flex;
-    column-gap: 0.5rem;
-    row-gap: 0.6rem;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+  display: flex;
+  column-gap: 0.5rem;
+  row-gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
 }
 
 .eachCardTech {
-    padding: 4px 15px;
-    border-radius: 10px;
-    color: white;
-    background-color: hsla(0, 0%, 100%, .16);
-    font-size: 1.05rem;
+  padding: 4px 15px;
+  border-radius: 10px;
+  color: white;
+  background-color: hsla(0, 0%, 100%, 0.16);
+  font-size: 1.05rem;
 }
 
 .newCardLinks {
-    display: flex;
-    align-items: center;
-    margin-right: 5px;
-    margin-left: 5px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .newCardVisitProjectButton {
-    border: #cec4c4;
-    border-radius: 100px;
-    width: 40%;
-    padding: 8px 15px;
-    background-color: #0046FB;
-    cursor: pointer;
-    font-size: large;
-    text-align: center;
-    color: inherit;
-    text-decoration: none;
-    background-size: 300% 100%;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    background-image: linear-gradient(to right, #0046FB, #1664eb, #0891be, #3f86ed);
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  border: #cec4c4;
+  border-radius: 100px;
+  width: 40%;
+  padding: 8px 15px;
+  background-color: #0046fb;
+  cursor: pointer;
+  font-size: large;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  background-size: 300% 100%;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #0046fb,
+    #1664eb,
+    #0891be,
+    #3f86ed
+  );
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
 .newCardVisitProjectButton:hover {
-    background-position: 100% 0;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .newCardVisitProjectButton:focus {
-    outline: none;
+  outline: none;
 }
 
 .newCardGitHubButton {
-    cursor: pointer;
-    background-color: #333;
+  cursor: pointer;
+  background-color: #333;
 }
 
 .newCardGitHubButton a {
-    text-decoration: none;
-    /* Remove underline */
-    color: inherit;
-    /* Use the default text color */
+  text-decoration: none;
+  /* Remove underline */
+  color: inherit;
+  /* Use the default text color */
 }
 
 .newCardGitHubButton:hover {
-    color: #bfbfce;
+  color: #bfbfce;
 }
 
 @media only screen and (max-width: 1800px) {
-    .rightSecImage {
-        width: 45%;
-    }
+  .rightSecImage {
+    width: 45%;
+  }
 
-    .evenCard .rightSecImage {
-        margin-left: 0rem;
-    }
+  .evenCard .rightSecImage {
+    margin-left: 0rem;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
-    .rightSecImage {
-        width: 45%;
-        top: 30%;
-    }
+  .rightSecImage {
+    width: 45%;
+    top: 30%;
+  }
 
-    .evenCard .rightSecImage {
-        margin-left: 0rem;
-    }
+  .evenCard .rightSecImage {
+    margin-left: 0rem;
+  }
 
-    .newCardVisitProjectButton {
-        width: auto;
-    }
+  .newCardVisitProjectButton {
+    width: auto;
+  }
 }
 
 /* Change flex direction to column for smaller screens */
 @media only screen and (max-width: 850px) {
-    .newCard {
-        flex-direction: column;
-        width: 90%;
-        margin: auto;
-    }
+  .newCard {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
 
-    .projectLabelsContainer .newCardGitHubButton {
-        order: 2;
-    }
+  .projectLabelsContainer .newCardGitHubButton {
+    order: 2;
+  }
 
-    .project-duration,
-    .cardAppType,
-    .cardTeamOrSoloProject,
-    .newCardGitHubButton {
-        padding: 4px 15px;
-        margin-right: 7px;
-        margin-bottom: 7px;
-        border-radius: 20px;
-        color: white;
-        font-weight: bold;
-    }
+  .project-duration,
+  .cardAppType,
+  .cardTeamOrSoloProject,
+  .newCardGitHubButton {
+    padding: 4px 15px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+  }
 
-    .projectLabelsContainer {
-        margin-bottom: 1rem;
-    }
+  .projectLabelsContainer {
+    margin-bottom: 1rem;
+  }
 
-    .cardDescription {
-        font-size: 17px;
-        margin-bottom: 1rem;
-    }
+  .cardDescription {
+    font-size: 17px;
+    margin-bottom: 1rem;
+  }
 
-    .newCardVisitProjectButton {
-        width: 80%;
-    }
+  .newCardVisitProjectButton {
+    width: 80%;
+  }
 
-    .rightSecImage {
-        position: relative;
-        width: 100%;
-        margin-top: -2rem;
-    }
+  .rightSecImage {
+    position: relative;
+    width: 100%;
+    margin-top: -2rem;
+  }
 
-    .evenCard .rightSecImage {
-        margin-left: 0rem;
-    }
+  .evenCard .rightSecImage {
+    margin-left: 0rem;
+  }
 
-    /* Define classes for each color from cardColors array */
-    .color-1 {
-        background: linear-gradient(0deg, #5fd77e, black);
-    }
+  /* Define classes for each color from cardColors array */
+  .color-1 {
+    background: linear-gradient(0deg, #5fd77e, black);
+  }
 
-    .color-2 {
-        background: linear-gradient(-180deg, black, #1277fa);
-    }
+  .color-2 {
+    background: linear-gradient(-180deg, black, #1277fa);
+  }
 
-    .color-3 {
-        background: linear-gradient(0deg, #f55e45, black);
-    }
+  .color-3 {
+    background: linear-gradient(0deg, #f55e45, black);
+  }
 
-    .color-4 {
-        background: linear-gradient(-180deg, black, #6e46a6);
-    }
+  .color-4 {
+    background: linear-gradient(-180deg, black, #6e46a6);
+  }
 
-    .color-5 {
-        background: linear-gradient(0deg, #a91d34, black);
-    }
-
+  .color-5 {
+    background: linear-gradient(0deg, #a91d34, black);
+  }
 }

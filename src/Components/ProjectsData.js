@@ -1,5 +1,18 @@
 const projectsData = [
   {
+    name: "MyFlix",
+    date: "1 Month",
+    appType: "Web App",
+    teamOrSoloProject: "Team Project",
+    discription:
+      "In this project, I developed the backend of a movie selection web app using AWS Amplify, transitioning from a MERN stack to enhance deployment efficiency and user experience. Users can search for any movie and add or remove titles from their lists. Based on their selections, the app provides tailored movie recommendations. Additionally, I integrated a personalized recommendation system powered by ChatGPT, allowing users to input preferences and receive customized suggestions.",
+    link: "https://my-flix.com/",
+    github: "https://github.com/MyFelx/App",
+    Technologies: ["React", "Amplify"],
+    specialStyling: false,
+    imageName: "NMyflex.png",
+  },
+  {
     name: "GoScreen AI",
     date: "2 Weeks",
     appType: "Web App",
@@ -26,26 +39,13 @@ const projectsData = [
     imageName: "Group 28.png",
   },
   {
-    name: "MyFlex",
-    date: "2 Months",
-    appType: "Web App",
-    teamOrSoloProject: "Team Project",
-    discription:
-      "This web application intends to help you decide what movie to watch next with a recommendation feature and movie tracking system to enhance your viewing experience.",
-    link: "http://ec2-3-141-165-79.us-east-2.compute.amazonaws.com:3333/",
-    github: "https://github.com/MyFelx/App",
-    Technologies: ["React", "Node", "MongoDB"],
-    specialStyling: false,
-    imageName: "NMyflex.png",
-  },
-  {
     name: "Sparkle Drive",
     date: "2 Weeks",
     appType: "Web App",
     teamOrSoloProject: "Solo Project",
     discription:
       "Developed and launched the website with dynamic pricing, SMS order management, and user-friendly features, enhancing the customer experience and revenue potential.",
-    link: "https://sparkledrive.shop/",
+    link: "https://carwash-d2381.web.app/",
     github: "https://github.com/youssefMoJo/carWash",
     Technologies: ["React", "Firebase (Realtime DB, Hosting)"],
     specialStyling: false,
@@ -57,7 +57,7 @@ const projectsData = [
     appType: "Machine Learning",
     teamOrSoloProject: "Team Project",
     discription:
-      "Applied Machine Learning methods and data preparation techniques to pre-process raw medical data and construct multiple predictive models.",
+      "In this project, I achieved 85% prediction accuracy on medical data using Python. I enhanced the model's performance through various data scaling techniques, which contributed to the overall effectiveness of the predictions. This effort was recognized with a grade of 81 for the project.",
     link: "https://www.kaggle.com/code/youssefmohamed21/heart-disease-prediction-using-ml",
     github: "https://github.com/ksfarag/Heart-Disease-Prediction-Using-ML",
     Technologies: ["Python (pandas, NumPy, matplotlib, scikit-learn)"],
