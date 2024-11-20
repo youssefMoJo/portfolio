@@ -368,14 +368,14 @@ const NewHomeLeftSide = () => {
           top: "80vh",
         }}
       >
-        <div className="ResumeButtonContainer">
+        {/* <div className="ResumeButtonContainer">
           <a className="ResumeButton" href={MyResume}>
             Download Resume
           </a>
           <a href={MyResume}>
             <BiDownload className="DownloadIcon" />
           </a>
-        </div>
+        </div> */}
         <a
           style={linkedinAnimationStyle}
           href="https://www.linkedin.com/in/youssef-mohamed-812b4b18a/"
