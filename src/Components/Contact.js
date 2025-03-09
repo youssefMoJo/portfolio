@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="ContactBoxContainer">
         <h1 className="ContactBoxTitle">Grab a Coffee and Let's Chat!</h1>
         <div className="contactConnectContainer">
-          <a
+          {/* <a
             className="contactEmailButton"
             href="mailto: youssefraafat848@gmail.com"
           >
@@ -28,15 +28,15 @@ const Contact = () => {
               alt="Hi"
             />
             youssefraafat848@gmail.com
-          </a>
-          <a className="contactPhoneButton" href="tel:+17092196251">
+          </a> */}
+          {/* <a className="contactPhoneButton" href="tel:+17092196251">
             <img
               className="contactPhoneImg"
               src={require("../Assets/phone.png")}
               alt="Hi"
             />
             +1 (709) 219-6251
-          </a>
+          </a> */}
           <a
             className="contactLinkedinButton"
             href="https://www.linkedin.com/in/youssef-mohamed-812b4b18a/"
